@@ -38,7 +38,7 @@ func main() {
 
 	for i, t := range testimonials {
 		slug := slugify(t.Name)
-		filename := fmt.Sprintf("%03d-%s.md", i, slug)
+		filename := fmt.Sprintf("%03d-%s.md", i+1, slug)
 		path := filepath.Join(outputDir, filename)
 
 		var builder strings.Builder
