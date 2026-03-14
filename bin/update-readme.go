@@ -14,6 +14,20 @@ import (
 
 const readmeFile = "README.md"
 
+func cleanContributionTitle(title string) string {
+	prefix := "opdavies "
+
+	if strings.HasPrefix(strings.ToLower(title), prefix) {
+		title = title[len(prefix):]
+	}
+
+	if len(title) > 0 {
+		title = strings.ToUpper(title[:1]) + title[1:]
+	}
+
+	return title
+}
+
 func isContribution(title, feedURL string) bool {
 	titleLower := strings.ToLower(title)
 
@@ -38,6 +52,21 @@ func main() {
 	updateLatestContributions()
 }
 
+func normalizeContributionTitle(title string) string {
+	lower := strings.ToLower(title)
+
+	// Fix "pushed repo" → "pushed to repo"
+	if strings.Contains(lower, " pushed ") && !strings.Contains(lower, " pushed to ") {
+		parts := strings.SplitN(title, " pushed ", 2)
+
+		if len(parts) == 2 {
+			return parts[0] + " pushed to " + parts[1]
+		}
+	}
+
+	return title
+}
+
 func ordinal(day int) string {
 	if day >= 11 && day <= 13 {
 		return fmt.Sprintf("%dth", day)
@@ -53,21 +82,6 @@ func ordinal(day int) string {
 	default:
 		return fmt.Sprintf("%dth", day)
 	}
-}
-
-func normalizeContributionTitle(title string) string {
-	lower := strings.ToLower(title)
-
-	// Fix "pushed repo" → "pushed to repo"
-	if strings.Contains(lower, " pushed ") && !strings.Contains(lower, " pushed to ") {
-		parts := strings.SplitN(title, " pushed ", 2)
-
-		if len(parts) == 2 {
-			return parts[0] + " pushed to " + parts[1]
-		}
-	}
-
-	return title
 }
 
 func updateLatestBlogPosts() {
@@ -284,6 +298,7 @@ func updateLatestContributions() {
 			}
 
 			title := normalizeContributionTitle(item.Title)
+			title = cleanContributionTitle(title)
 
 			titleLower := strings.ToLower(title)
 			date := *item.PublishedParsed
