@@ -12,11 +12,11 @@ I write and contribute to open-source code, including Drupal core. You can see m
 
 <!-- Start latest blog posts -->
 
+- [Building a dynamic README.md](https://www.oliverdavies.uk/blog/building-dynamic-readme) - 14th March 2026
 - [Using Process Compose with Sculpin, Browsersync and Decap CMS](https://www.oliverdavies.uk/blog/using-process-compose-with-sculpin-browsersync-and-decap-cms) - 1st March 2026
 - [Reversing a YAML list](https://www.oliverdavies.uk/blog/reversing-yaml-list) - 22nd February 2026
 - [Using Sculpin with Decap CMS](https://www.oliverdavies.uk/blog/sculpin-decap-cms) - 22nd February 2026
 - [Vim startup commands](https://www.oliverdavies.uk/blog/vim-startup-commands) - 21st February 2026
-- [Using .localhost URLs for local development](https://www.oliverdavies.uk/blog/localhost-urls) - 21st February 2026
 
 <!-- End latest blog posts -->
 
@@ -62,25 +62,25 @@ Well done. You've created a really excellent resource here that has the potentia
 
 <!-- Start latest contributions -->
 
-- [Pushed to dotfiles](https://github.com/opdavies/dotfiles/compare/682b923fd2...01bef8d4f4) - 12th March 2026
-- [Pushed to dotfiles](https://github.com/opdavies/dotfiles/compare/e7ce0db7ba...682b923fd2) - 12th March 2026
-- [Pushed to dotfiles](https://github.com/opdavies/dotfiles/compare/c8766f2b1d...e7ce0db7ba) - 12th March 2026
-- [Pushed to macos-provisioning](https://github.com/opdavies/macos-provisioning/compare/95c35cc95b...37c98afe4c) - 9th March 2026
-- [Opened a pull request in boost](https://github.com/rwxrob/boost/pull/65) - 9th March 2026
-- [Pushed to boost](https://github.com/opdavies/boost/compare/d6a9f41463...b4852f9d6f) - 9th March 2026
-- [Pushed to atdc](https://github.com/opdavies/atdc/compare/43597bb107...48e897fb6f) - 9th March 2026
-- [Pushed to drupal-module-tdd-blog](https://github.com/opdavies/drupal-module-tdd-blog/compare/bf1fce2a52...c25c99b57e) - 9th March 2026
-- [Pushed to drupal-module-template](https://github.com/opdavies/drupal-module-template/compare/f98a604293...9811a3fa24) - 1st March 2026
-- [Pushed to rebuilding-uis](https://github.com/opdavies/rebuilding-uis/compare/4494707198...688e5f3aeb) - 1st March 2026
-- [Pushed to oliverdavies.uk](https://github.com/opdavies/oliverdavies.uk/compare/4a5f824eae...57be8082be) - 1st March 2026
-- [Oliver Davies closed merge request !4: Add nixfmt as a formatter, reformat flake.nix files at project / drupal_flake](https://git.drupalcode.org/project/drupal_flake/-/merge_requests/4) - 16th February 2026
-- [Oliver Davies opened merge request !5: Add nixfmt, format flake.nix files at project / drupal_flake](https://git.drupalcode.org/project/drupal_flake/-/merge_requests/5) - 16th February 2026
-- [Oliver Davies pushed to project branch 3573852-add-nixfmt-as at Issue forks / drupal_flake-3573852](https://git.drupalcode.org/issue/drupal_flake-3573852/-/commit/ea9a763132216f24f107beb02233e5f1177faf87) - 16th February 2026
-- [Oliver Davies opened merge request !4: Add nixfmt as a formatter, reformat flake.nix files at project / drupal_flake](https://git.drupalcode.org/project/drupal_flake/-/merge_requests/4) - 16th February 2026
-- [Oliver Davies pushed to new project branch add-formatter at Issue forks / drupal_flake-3573852](https://git.drupalcode.org/issue/drupal_flake-3573852/-/commits/add-formatter) - 16th February 2026
-- [Oliver Davies pushed to new project branch 3573852-add-nixfmt-as at Issue forks / drupal_flake-3573852](https://git.drupalcode.org/issue/drupal_flake-3573852/-/commits/3573852-add-nixfmt-as) - 16th February 2026
-- [Oliver Davies opened merge request !3: Change package from mysql_client to mariadb.client at project / drupal_flake](https://git.drupalcode.org/project/drupal_flake/-/merge_requests/3) - 21st January 2026
-- [Oliver Davies pushed to project branch 3568657-mysqlmariadb-error-when at Issue forks / drupal_flake-3568657](https://git.drupalcode.org/issue/drupal_flake-3568657/-/commit/6e6e2726b18f43c1d3aa6262adad48f95a6aeb4e) - 21st January 2026
-- [Oliver Davies pushed to new project branch 3568657-mysqlmariadb-error-when at Issue forks / drupal_flake-3568657](https://git.drupalcode.org/issue/drupal_flake-3568657/-/commits/3568657-mysqlmariadb-error-when) - 21st January 2026
+- [Pushed to main at opdavies/oliverdavies.uk](https://git.oliverdavies.uk/opdavies/oliverdavies.uk/commit/3303533a6caf8086482c85e2b736b02a5608c205) - 14th March 2026
+- [Pushed to tag 2026-03-14-09.49.52 to opdavies/nix-config](https://git.oliverdavies.uk/opdavies/nix-config/src/tag/2026-03-14-09.49.52) - 14th March 2026
+- [Pushed to main at opdavies/nix-config](https://git.oliverdavies.uk/opdavies/nix-config/commit/4aa36d044a1fa28e657743b72c438c8bd836cd9d) - 14th March 2026
+- [Pushed to main at opdavies/oliverdavies.uk](https://git.oliverdavies.uk/opdavies/oliverdavies.uk/commit/b001b58f51424b341685b345785eed1419faea40) - 14th March 2026
+- [Pushed to main at opdavies/oliverdavies.uk](https://git.oliverdavies.uk/opdavies/oliverdavies.uk/commit/2104df72d851428ba930945be32f9752e9849d95) - 14th March 2026
+- [Pushed to main at opdavies/oliverdavies.uk](https://git.oliverdavies.uk/opdavies/oliverdavies.uk/commit/3ba7ff6604c1eb7df6c71e650a3082df48c1fec0) - 14th March 2026
+- [Pushed to main at opdavies/oliverdavies.uk](https://git.oliverdavies.uk/opdavies/oliverdavies.uk/commit/62dae6db9afedb9310ded9eff2da0a18fa715949) - 14th March 2026
+- [Pushed to 1.x at opdavies/drupal-gather](https://git.oliverdavies.uk/opdavies/drupal-gather/src/branch/1.x) - 14th March 2026
+- [Pushed to main at opdavies/nix-config](https://git.oliverdavies.uk/opdavies/nix-config/commit/0fd6c81bcf3dfbcb0a9c1e06e950e08d4d38a134) - 14th March 2026
+- [Pushed to 1.x at opdavies/drupal-gather](https://git.oliverdavies.uk/opdavies/drupal-gather/commit/88abbadb3a9d516f89d4b09211122a985ee20507) - 14th March 2026
+- [Pushed to 1.x at opdavies/drupal-gather](/opdavies/drupal-gather/compare/f84c41d1bf9a62113919f838dc17066ed0dee3d2...6a9d607cbb32259526710d01f9f23e2eb0d49ec4) - 14th March 2026
+- [Pushed to 1.x at opdavies/drupal-gather](/opdavies/drupal-gather/compare/c15ec5ad71260a9ec630c2851613e5d3f3f1458e...f84c41d1bf9a62113919f838dc17066ed0dee3d2) - 14th March 2026
+- [Pushed to 1.x at opdavies/drupal-gather](/opdavies/drupal-gather/compare/825602c52b1b23e8081323f53afa587901ee01cf...c15ec5ad71260a9ec630c2851613e5d3f3f1458e) - 13th March 2026
+- [Pushed to 1.x at opdavies/drupal-gather](https://git.oliverdavies.uk/opdavies/drupal-gather/commit/825602c52b1b23e8081323f53afa587901ee01cf) - 13th March 2026
+- [Pushed to 1.x at opdavies/drupal-gather](https://git.oliverdavies.uk/opdavies/drupal-gather/commit/1f4f81f893bab918390a8b40e1676a387ed106fe) - 13th March 2026
+- [Pushed to 1.x at opdavies/drupal-gather](/opdavies/drupal-gather/compare/98d3d346044a38968ea25ee5581eb6325072d40c...c2865181c206d00b0ad28394d51249ca3d64f230) - 13th March 2026
+- [Pushed to 1.x at opdavies/drupal-gather](https://git.oliverdavies.uk/opdavies/drupal-gather/commit/98d3d346044a38968ea25ee5581eb6325072d40c) - 13th March 2026
+- [Pushed to main at opdavies/books](https://git.oliverdavies.uk/opdavies/books/commit/7a3add82e8add223e007b3a748e2ec7e0bfee8b7) - 12th March 2026
+- [Pushed to tag sculpin-from-scratch/2026-03-12-20.52.48 to opdavies/books](https://git.oliverdavies.uk/opdavies/books/src/tag/sculpin-from-scratch/2026-03-12-20.52.48) - 12th March 2026
+- [Pushed to main at opdavies/books](/opdavies/books/compare/5edbdd7e2eb6b900425728b47392be40a3dc3d93...84bb07bff0e872712d3e356c5669e05d35b62ca5) - 12th March 2026
 
 <!-- End latest contributions -->
