@@ -4,11 +4,11 @@
 
 <!-- Start latest blog posts -->
 
-- [Using Process Compose with Sculpin, Browsersync and Decap CMS](https://www.oliverdavies.uk/blog/using-process-compose-with-sculpin-browsersync-and-decap-cms) - 1 March 2026
-- [Reversing a YAML list](https://www.oliverdavies.uk/blog/reversing-yaml-list) - 22 February 2026
-- [Using Sculpin with Decap CMS](https://www.oliverdavies.uk/blog/sculpin-decap-cms) - 22 February 2026
-- [Vim startup commands](https://www.oliverdavies.uk/blog/vim-startup-commands) - 21 February 2026
-- [Using .localhost URLs for local development](https://www.oliverdavies.uk/blog/localhost-urls) - 21 February 2026
+- [Using Process Compose with Sculpin, Browsersync and Decap CMS](https://www.oliverdavies.uk/blog/using-process-compose-with-sculpin-browsersync-and-decap-cms) - 1st March 2026
+- [Reversing a YAML list](https://www.oliverdavies.uk/blog/reversing-yaml-list) - 22nd February 2026
+- [Using Sculpin with Decap CMS](https://www.oliverdavies.uk/blog/sculpin-decap-cms) - 22nd February 2026
+- [Vim startup commands](https://www.oliverdavies.uk/blog/vim-startup-commands) - 21st February 2026
+- [Using .localhost URLs for local development](https://www.oliverdavies.uk/blog/localhost-urls) - 21st February 2026
 
 <!-- End latest blog posts -->
 

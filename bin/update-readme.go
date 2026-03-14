@@ -7,7 +7,6 @@ import (
 	"path/filepath"
 	"sort"
 	"strings"
-	"time"
 
 	"github.com/mmcdole/gofeed"
 )
@@ -19,6 +18,23 @@ const (
 func main() {
 	updateLatestBlogPosts()
 	updateLatestTestimonials()
+}
+
+func ordinal(day int) string {
+	if day >= 11 && day <= 13 {
+		return fmt.Sprintf("%dth", day)
+	}
+
+	switch day % 10 {
+	case 1:
+		return fmt.Sprintf("%dst", day)
+	case 2:
+		return fmt.Sprintf("%dnd", day)
+	case 3:
+		return fmt.Sprintf("%drd", day)
+	default:
+		return fmt.Sprintf("%dth", day)
+	}
 }
 
 func updateLatestBlogPosts() {
@@ -76,14 +92,8 @@ func updateLatestBlogPosts() {
 	var lines []string
 
 	for _, item := range feed.Items[:limit] {
-		dateFormat := "2 January 2006"
-		dateStr := ""
-
-		if item.PublishedParsed != nil {
-			dateStr = item.PublishedParsed.Format(dateFormat)
-		} else {
-			dateStr = time.Now().Format(dateFormat)
-		}
+		t := item.PublishedParsed
+		dateStr := fmt.Sprintf("%s %s %d", ordinal(t.Day()), t.Month(), t.Year())
 
 		lines = append(lines, fmt.Sprintf("- [%s](%s) - %s", item.Title, item.Link, dateStr))
 	}
