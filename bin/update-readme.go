@@ -55,6 +55,21 @@ func ordinal(day int) string {
 	}
 }
 
+func normalizeContributionTitle(title string) string {
+	lower := strings.ToLower(title)
+
+	// Fix "pushed repo" → "pushed to repo"
+	if strings.Contains(lower, " pushed ") && !strings.Contains(lower, " pushed to ") {
+		parts := strings.SplitN(title, " pushed ", 2)
+
+		if len(parts) == 2 {
+			return parts[0] + " pushed to " + parts[1]
+		}
+	}
+
+	return title
+}
+
 func updateLatestBlogPosts() {
 	const (
 		blogFeedURL = "https://www.oliverdavies.uk/rss/blog.xml"
@@ -268,7 +283,8 @@ func updateLatestContributions() {
 				continue
 			}
 
-			title := item.Title
+			title := normalizeContributionTitle(item.Title)
+
 			titleLower := strings.ToLower(title)
 			date := *item.PublishedParsed
 
