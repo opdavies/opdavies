@@ -6,7 +6,7 @@ I'm an Acquia Triple Certified Drupal Expert who has worked on Drupal.org for th
 
 I regularly [present talks and workshops](https://www.oliverdavies.uk/presentations) at user groups and conferences.
 
-I write and contribute to open-source code, including Drupal core. You can see my projects and contributions on my [Drupal.org](https://www.drupal.org/u/opdavies) and [GitHub](https://www.github.com/opdavies) profiles.
+I write and contribute to open-source code, including Drupal core. You can see my projects and contributions on my [Drupal.org](https://www.drupal.org/u/opdavies) and [GitHub](https://www.github.com/opdavies) profiles, and [my Forgejo instance](https://git.oliverdavies.uk).
 
 ## Latest Blog Posts
 
