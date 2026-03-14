@@ -269,7 +269,13 @@ func updateLatestContributions() {
 			}
 
 			title := item.Title
+			titleLower := strings.ToLower(title)
 			date := *item.PublishedParsed
+
+			// Skip issue activity
+			if strings.Contains(titleLower, "opened issue") {
+				continue
+			}
 
 			if isContribution(title, url) {
 				all = append(all, Contribution{
