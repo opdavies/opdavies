@@ -186,7 +186,7 @@ func updateLatestTestimonials() {
 		formatted = append(formatted, entry)
 	}
 
-	newSection := strings.Join(formatted, "\n\n---\n\n")
+	newSection := strings.Join(formatted, "\n\n")
 
 	updateSectionInReadme(startMarker, endMarker, newSection)
 

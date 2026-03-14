@@ -22,8 +22,6 @@ Oliver devised a creative and original approach to Drupal theme switching based 
 
 He gave several helpful mentoring sessions with our front end developer to support us to build this approach into our site.
 
----
-
 ### Luis Ibhiabor - IT Teacher, Activate Learning (Reading College)
 
 We are indeed grateful to Oliver for his sessions with our students.
@@ -37,8 +35,6 @@ Students greatly enjoyed the live coding session and felt it was an eye opener f
 He is dedicated and passionate about frontend and backend development.
 
 We will be glad to have him back next time.
-
----
 
 ### Daniel Davis-Boxleitner - Senior Engineer at Palantir.net
 
