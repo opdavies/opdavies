@@ -17,11 +17,6 @@ I write and contribute to open-source code, including Drupal core. You can see m
 - [Using Sculpin with Decap CMS](https://www.oliverdavies.uk/blog/sculpin-decap-cms) - 22nd February 2026
 - [Vim startup commands](https://www.oliverdavies.uk/blog/vim-startup-commands) - 21st February 2026
 - [Using .localhost URLs for local development](https://www.oliverdavies.uk/blog/localhost-urls) - 21st February 2026
-- [Creating recipes for Drupal Gather](https://www.oliverdavies.uk/blog/creating-recipes-drupal-gather) - 13th February 2026
-- [Simplifying Drupal's default.settings.php file with Vim](https://www.oliverdavies.uk/blog/deleting-comments-blank-lines-vim) - 12th February 2026
-- [Parsing a large XML file with xq](https://www.oliverdavies.uk/blog/parsing-xml-file-xq) - 11th February 2026
-- [Debugging errors in Process Compose](https://www.oliverdavies.uk/blog/debugging-process-compose-errors) - 9th February 2026
-- [Nix for PHP Developers (PHPSW)](https://www.oliverdavies.uk/blog/nix-php-developers-phpsw) - 9th February 2026
 
 <!-- End latest blog posts -->
 

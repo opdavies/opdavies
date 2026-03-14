@@ -89,7 +89,7 @@ func updateLatestBlogPosts() {
 		blogFeedURL = "https://www.oliverdavies.uk/rss/blog.xml"
 		startMarker = "<!-- Start latest blog posts -->"
 		endMarker   = "<!-- End latest blog posts -->"
-		numToShow   = 10
+		numToShow   = 5
 	)
 
 	resp, err := http.Get(blogFeedURL)
