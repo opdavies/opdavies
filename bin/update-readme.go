@@ -14,10 +14,24 @@ import (
 
 const readmeFile = "README.md"
 
+func isContribution(title, feedURL string) bool {
+	titleLower := strings.ToLower(title)
+
+	keywords := []string{"commit", "pushed", "pull request", "opened issue", "patch", "merge request"}
+
+	for _, k := range keywords {
+		if strings.Contains(titleLower, k) {
+			return true
+		}
+	}
+
+	return false
+}
+
 func main() {
 	updateLatestBlogPosts()
 	updateLatestTestimonials()
-	updateRecentContributions()
+	updateLatestContributions()
 }
 
 func ordinal(day int) string {
@@ -195,7 +209,7 @@ func updateLatestTestimonials() {
 	fmt.Println("README.md updated with latest testimonials.")
 }
 
-func updateRecentContributions() {
+func updateLatestContributions() {
 	const (
 		startMarker = "<!-- Start latest contributions -->"
 		endMarker   = "<!-- End latest contributions -->"
@@ -245,17 +259,21 @@ func updateRecentContributions() {
 		}
 
 		for _, item := range feed.Items {
-			date := time.Now()
-
-			if item.PublishedParsed != nil {
-				date = *item.PublishedParsed
+			// Skip if no date
+			if item.PublishedParsed == nil {
+				continue
 			}
 
-			all = append(all, Contribution{
-				Date:  date,
-				Link:  item.Link,
-				Title: item.Title,
-			})
+			title := item.Title
+			date := *item.PublishedParsed
+
+			if isContribution(title, url) {
+				all = append(all, Contribution{
+					Date:  date,
+					Link:  item.Link,
+					Title: title,
+				})
+			}
 		}
 	}
 
