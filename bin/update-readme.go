@@ -20,6 +20,10 @@ func isContribution(title, feedURL string) bool {
 	keywords := []string{"commit", "pushed", "pull request", "opened issue", "patch", "merge request"}
 
 	for _, k := range keywords {
+		if strings.Contains(titleLower, "at opdavies/opdavies") {
+			continue
+		}
+
 		if strings.Contains(titleLower, k) {
 			return true
 		}
