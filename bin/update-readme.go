@@ -217,7 +217,7 @@ func updateLatestContributions() {
 	const (
 		startMarker = "<!-- Start latest contributions -->"
 		endMarker   = "<!-- End latest contributions -->"
-		numToShow   = 20
+		numToShow   = 10
 	)
 
 	feeds := []string{

@@ -15,7 +15,6 @@ I write and contribute to open-source code, including Drupal core. You can see m
 - [opdavies opened issue opdavies/opdavies#2](https://git.oliverdavies.uk/opdavies/opdavies/issues/2) - 14th March 2026
 - [opdavies opened issue opdavies/opdavies#1](https://git.oliverdavies.uk/opdavies/opdavies/issues/1) - 14th March 2026
 - [opdavies pushed to 1.x at opdavies/drupal-gather](https://git.oliverdavies.uk/opdavies/drupal-gather/src/branch/1.x) - 14th March 2026
-- [opdavies pushed to main at opdavies/nix-config](https://git.oliverdavies.uk/opdavies/nix-config/commit/0fd6c81bcf3dfbcb0a9c1e06e950e08d4d38a134) - 14th March 2026
 - [opdavies pushed dotfiles](https://github.com/opdavies/dotfiles/compare/682b923fd2...01bef8d4f4) - 12th March 2026
 - [opdavies pushed dotfiles](https://github.com/opdavies/dotfiles/compare/e7ce0db7ba...682b923fd2) - 12th March 2026
 - [opdavies pushed dotfiles](https://github.com/opdavies/dotfiles/compare/c8766f2b1d...e7ce0db7ba) - 12th March 2026
@@ -23,15 +22,6 @@ I write and contribute to open-source code, including Drupal core. You can see m
 - [opdavies opened a pull request in boost](https://github.com/rwxrob/boost/pull/65) - 9th March 2026
 - [opdavies pushed boost](https://github.com/opdavies/boost/compare/d6a9f41463...b4852f9d6f) - 9th March 2026
 - [opdavies pushed atdc](https://github.com/opdavies/atdc/compare/43597bb107...48e897fb6f) - 9th March 2026
-- [opdavies pushed drupal-module-tdd-blog](https://github.com/opdavies/drupal-module-tdd-blog/compare/bf1fce2a52...c25c99b57e) - 9th March 2026
-- [opdavies pushed drupal-module-template](https://github.com/opdavies/drupal-module-template/compare/f98a604293...9811a3fa24) - 1st March 2026
-- [opdavies pushed rebuilding-uis](https://github.com/opdavies/rebuilding-uis/compare/4494707198...688e5f3aeb) - 1st March 2026
-- [opdavies pushed oliverdavies.uk](https://github.com/opdavies/oliverdavies.uk/compare/4a5f824eae...57be8082be) - 1st March 2026
-- [opdavies pushed nix-config](https://github.com/opdavies/nix-config/compare/cd20342f32...7b17a55134) - 1st March 2026
-- [Oliver Davies closed merge request !4: Add nixfmt as a formatter, reformat flake.nix files at project / drupal_flake](https://git.drupalcode.org/project/drupal_flake/-/merge_requests/4) - 16th February 2026
-- [Oliver Davies opened merge request !5: Add nixfmt, format flake.nix files at project / drupal_flake](https://git.drupalcode.org/project/drupal_flake/-/merge_requests/5) - 16th February 2026
-- [Oliver Davies pushed to project branch 3573852-add-nixfmt-as at Issue forks / drupal_flake-3573852](https://git.drupalcode.org/issue/drupal_flake-3573852/-/commit/ea9a763132216f24f107beb02233e5f1177faf87) - 16th February 2026
-- [Oliver Davies opened merge request !4: Add nixfmt as a formatter, reformat flake.nix files at project / drupal_flake](https://git.drupalcode.org/project/drupal_flake/-/merge_requests/4) - 16th February 2026
 
 <!-- End latest contributions -->
 
