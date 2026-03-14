@@ -8,23 +8,6 @@ I regularly [present talks and workshops](https://www.oliverdavies.uk) at user g
 
 I write and contribute to open-source code, including Drupal core. You can see my projects and contributions on my [Drupal.org](https://www.drupal.org/u/opdavies) and [GitHub](https://www.github.com/opdavies) profiles.
 
-## Latest Open Source Contributions
-
-<!-- Start latest contributions -->
-
-- [Pushed to 1.x at opdavies/drupal-gather](https://git.oliverdavies.uk/opdavies/drupal-gather/src/branch/1.x) - 14th March 2026
-- [Pushed to dotfiles](https://github.com/opdavies/dotfiles/compare/682b923fd2...01bef8d4f4) - 12th March 2026
-- [Pushed to dotfiles](https://github.com/opdavies/dotfiles/compare/e7ce0db7ba...682b923fd2) - 12th March 2026
-- [Pushed to dotfiles](https://github.com/opdavies/dotfiles/compare/c8766f2b1d...e7ce0db7ba) - 12th March 2026
-- [Pushed to macos-provisioning](https://github.com/opdavies/macos-provisioning/compare/95c35cc95b...37c98afe4c) - 9th March 2026
-- [Opened a pull request in boost](https://github.com/rwxrob/boost/pull/65) - 9th March 2026
-- [Pushed to boost](https://github.com/opdavies/boost/compare/d6a9f41463...b4852f9d6f) - 9th March 2026
-- [Pushed to atdc](https://github.com/opdavies/atdc/compare/43597bb107...48e897fb6f) - 9th March 2026
-- [Pushed to drupal-module-tdd-blog](https://github.com/opdavies/drupal-module-tdd-blog/compare/bf1fce2a52...c25c99b57e) - 9th March 2026
-- [Pushed to drupal-module-template](https://github.com/opdavies/drupal-module-template/compare/f98a604293...9811a3fa24) - 1st March 2026
-
-<!-- End latest contributions -->
-
 ## Latest Blog Posts
 
 <!-- Start latest blog posts -->
@@ -79,3 +62,20 @@ The course was very informative. One of the biggest pain points with Drupal test
 Well done. You've created a really excellent resource here that has the potential to bring Drupal development forward a huge leap. You've managed to simplify and share some often complex seeming issues.
 
 <!-- End latest testimonials -->
+
+## Latest Open Source Contributions
+
+<!-- Start latest contributions -->
+
+- [Pushed to 1.x at opdavies/drupal-gather](https://git.oliverdavies.uk/opdavies/drupal-gather/src/branch/1.x) - 14th March 2026
+- [Pushed to dotfiles](https://github.com/opdavies/dotfiles/compare/682b923fd2...01bef8d4f4) - 12th March 2026
+- [Pushed to dotfiles](https://github.com/opdavies/dotfiles/compare/e7ce0db7ba...682b923fd2) - 12th March 2026
+- [Pushed to dotfiles](https://github.com/opdavies/dotfiles/compare/c8766f2b1d...e7ce0db7ba) - 12th March 2026
+- [Pushed to macos-provisioning](https://github.com/opdavies/macos-provisioning/compare/95c35cc95b...37c98afe4c) - 9th March 2026
+- [Opened a pull request in boost](https://github.com/rwxrob/boost/pull/65) - 9th March 2026
+- [Pushed to boost](https://github.com/opdavies/boost/compare/d6a9f41463...b4852f9d6f) - 9th March 2026
+- [Pushed to atdc](https://github.com/opdavies/atdc/compare/43597bb107...48e897fb6f) - 9th March 2026
+- [Pushed to drupal-module-tdd-blog](https://github.com/opdavies/drupal-module-tdd-blog/compare/bf1fce2a52...c25c99b57e) - 9th March 2026
+- [Pushed to drupal-module-template](https://github.com/opdavies/drupal-module-template/compare/f98a604293...9811a3fa24) - 1st March 2026
+
+<!-- End latest contributions -->
