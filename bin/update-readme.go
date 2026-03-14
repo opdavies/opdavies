@@ -7,17 +7,17 @@ import (
 	"path/filepath"
 	"sort"
 	"strings"
+	"time"
 
 	"github.com/mmcdole/gofeed"
 )
 
-const (
-	readmeFile = "README.md"
-)
+const readmeFile = "README.md"
 
 func main() {
 	updateLatestBlogPosts()
 	updateLatestTestimonials()
+	updateRecentContributions()
 }
 
 func ordinal(day int) string {
@@ -94,13 +94,10 @@ func updateLatestBlogPosts() {
 	for _, item := range feed.Items[:limit] {
 		t := item.PublishedParsed
 		dateStr := fmt.Sprintf("%s %s %d", ordinal(t.Day()), t.Month(), t.Year())
-
-		lines = append(lines, fmt.Sprintf("- [%s](%s) - %s", item.Title, item.Link, dateStr))
+		lines = append(lines, fmt.Sprintf("- %s - [%s](%s)", item.Title, item.Link, dateStr))
 	}
 
-	newSection := strings.Join(lines, "\n")
-
-	updateSectionInReadme(startMarker, endMarker, newSection)
+	updateSectionInReadme(startMarker, endMarker, strings.Join(lines, "\n"))
 
 	fmt.Println("README.md updated with latest blog posts.")
 }
@@ -153,8 +150,7 @@ func updateLatestTestimonials() {
 		}
 
 		lines := strings.Split(string(content), "\n")
-		name := ""
-		desc := ""
+		name, desc := "", ""
 		bodyStart := 0
 
 		// Detect YAML front matter
@@ -191,16 +187,97 @@ func updateLatestTestimonials() {
 			header += " - " + desc
 		}
 
-		entry := fmt.Sprintf("%s\n\n%s", header, body)
-
-		formatted = append(formatted, entry)
+		formatted = append(formatted, fmt.Sprintf("%s\n\n%s", header, body))
 	}
 
-	newSection := strings.Join(formatted, "\n\n")
-
-	updateSectionInReadme(startMarker, endMarker, newSection)
+	updateSectionInReadme(startMarker, endMarker, strings.Join(formatted, "\n\n"))
 
 	fmt.Println("README.md updated with latest testimonials.")
+}
+
+func updateRecentContributions() {
+	const (
+		startMarker = "<!-- Start latest contributions -->"
+		endMarker   = "<!-- End latest contributions -->"
+		numToShow   = 20
+	)
+
+	feeds := []string{
+		"https://git.drupalcode.org/opdavies.atom",
+		"https://git.oliverdavies.uk/opdavies.atom",
+		"https://github.com/opdavies.atom",
+	}
+
+	type Contribution struct {
+		Date  time.Time
+		Link  string
+		Title string
+	}
+
+	var all []Contribution
+
+	fp := gofeed.NewParser()
+
+	for _, url := range feeds {
+		resp, err := http.Get(url)
+
+		if err != nil {
+			fmt.Println("Error fetching feed:", url, err)
+
+			continue
+		}
+
+		body, err := ioutil.ReadAll(resp.Body)
+		resp.Body.Close()
+
+		if err != nil {
+			fmt.Println("Error reading feed:", url, err)
+
+			continue
+		}
+
+		feed, err := fp.ParseString(string(body))
+
+		if err != nil {
+			fmt.Println("Error parsing feed:", url, err)
+
+			continue
+		}
+
+		for _, item := range feed.Items {
+			date := time.Now()
+
+			if item.PublishedParsed != nil {
+				date = *item.PublishedParsed
+			}
+
+			all = append(all, Contribution{
+				Date:  date,
+				Link:  item.Link,
+				Title: item.Title,
+			})
+		}
+	}
+
+	// Sort descending by date
+	sort.Slice(all, func(i, j int) bool { return all[i].Date.After(all[j].Date) })
+
+	limit := numToShow
+
+	if len(all) < limit {
+		limit = len(all)
+	}
+
+	var lines []string
+
+	for _, e := range all[:limit] {
+		dateStr := fmt.Sprintf("%s %s %d", ordinal(e.Date.Day()), e.Date.Month(), e.Date.Year())
+		lines = append(lines, fmt.Sprintf("* %s — [%s](%s)", dateStr, e.Title, e.Link))
+	}
+
+	updateSectionInReadme(startMarker, endMarker, strings.Join(lines, "\n"))
+
+	fmt.Println("README.md updated with recent contributions.")
 }
 
 func updateSectionInReadme(startMarker, endMarker, newSection string) {
@@ -225,9 +302,7 @@ func updateSectionInReadme(startMarker, endMarker, newSection string) {
 
 	newReadme := contentStr[:startIdx+len(startMarker)] + "\n\n" + newSection + "\n\n" + contentStr[endIdx:]
 
-	err = ioutil.WriteFile(readmeFile, []byte(newReadme), 0644)
-
-	if err != nil {
+	if err := ioutil.WriteFile(readmeFile, []byte(newReadme), 0644); err != nil {
 		fmt.Println("Error writing README.md:", err)
 
 		return

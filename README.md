@@ -8,15 +8,42 @@ I regularly [present talks and workshops](https://www.oliverdavies.uk) at user g
 
 I write and contribute to open-source code, including Drupal core. You can see my projects and contributions on my [Drupal.org](https://www.drupal.org/u/opdavies) and [GitHub](https://www.github.com/opdavies) profiles.
 
+## Latest Open Source Contributions
+
+<!-- Start latest contributions -->
+
+* 12th March 2026 — [opdavies pushed dotfiles](https://github.com/opdavies/dotfiles/compare/682b923fd2...01bef8d4f4)
+* 12th March 2026 — [opdavies pushed dotfiles](https://github.com/opdavies/dotfiles/compare/e7ce0db7ba...682b923fd2)
+* 12th March 2026 — [opdavies pushed dotfiles](https://github.com/opdavies/dotfiles/compare/c8766f2b1d...e7ce0db7ba)
+* 12th March 2026 — [opdavies created a branch](https://github.com/opdavies/dotfiles/compare/0000000000...c8766f2b1d)
+* 10th March 2026 — [opdavies forked opdavies/sculpin-related-posts-bundle from tsphethean/sculpin-related-posts-bundle](https://github.com/opdavies/sculpin-related-posts-bundle)
+* 9th March 2026 — [opdavies created a branch](https://github.com/PHPSouthWales/phpsouthwales-uk/compare/0000000000...344c02240a)
+* 9th March 2026 — [opdavies pushed macos-provisioning](https://github.com/opdavies/macos-provisioning/compare/95c35cc95b...37c98afe4c)
+* 9th March 2026 — [opdavies opened a pull request in boost](https://github.com/rwxrob/boost/pull/65)
+* 9th March 2026 — [opdavies pushed boost](https://github.com/opdavies/boost/compare/d6a9f41463...b4852f9d6f)
+* 9th March 2026 — [opdavies forked opdavies/boost from rwxrob/boost](https://github.com/opdavies/boost)
+* 9th March 2026 — [opdavies pushed atdc](https://github.com/opdavies/atdc/compare/43597bb107...48e897fb6f)
+* 9th March 2026 — [opdavies pushed drupal-module-tdd-blog](https://github.com/opdavies/drupal-module-tdd-blog/compare/bf1fce2a52...c25c99b57e)
+* 1st March 2026 — [opdavies pushed drupal-module-template](https://github.com/opdavies/drupal-module-template/compare/f98a604293...9811a3fa24)
+* 1st March 2026 — [opdavies pushed rebuilding-uis](https://github.com/opdavies/rebuilding-uis/compare/4494707198...688e5f3aeb)
+* 1st March 2026 — [opdavies created a branch](https://github.com/opdavies/rebuilding-uis/compare/0000000000...4494707198)
+* 1st March 2026 — [opdavies pushed oliverdavies.uk](https://github.com/opdavies/oliverdavies.uk/compare/4a5f824eae...57be8082be)
+* 1st March 2026 — [opdavies created a branch](https://github.com/opdavies/oliverdavies.uk/compare/0000000000...4a5f824eae)
+* 1st March 2026 — [opdavies pushed nix-config](https://github.com/opdavies/nix-config/compare/cd20342f32...7b17a55134)
+* 1st March 2026 — [opdavies created a branch](https://github.com/opdavies/nix-config/compare/0000000000...cd20342f32)
+* 19th February 2026 — [opdavies deleted](https://github.com/opdavies/roux/compare/448ba8d762...0000000000)
+
+<!-- End latest contributions -->
+
 ## Latest Blog Posts
 
 <!-- Start latest blog posts -->
 
-- [Using Process Compose with Sculpin, Browsersync and Decap CMS](https://www.oliverdavies.uk/blog/using-process-compose-with-sculpin-browsersync-and-decap-cms) - 1st March 2026
-- [Reversing a YAML list](https://www.oliverdavies.uk/blog/reversing-yaml-list) - 22nd February 2026
-- [Using Sculpin with Decap CMS](https://www.oliverdavies.uk/blog/sculpin-decap-cms) - 22nd February 2026
-- [Vim startup commands](https://www.oliverdavies.uk/blog/vim-startup-commands) - 21st February 2026
-- [Using .localhost URLs for local development](https://www.oliverdavies.uk/blog/localhost-urls) - 21st February 2026
+- Using Process Compose with Sculpin, Browsersync and Decap CMS - [https://www.oliverdavies.uk/blog/using-process-compose-with-sculpin-browsersync-and-decap-cms](1st March 2026)
+- Reversing a YAML list - [https://www.oliverdavies.uk/blog/reversing-yaml-list](22nd February 2026)
+- Using Sculpin with Decap CMS - [https://www.oliverdavies.uk/blog/sculpin-decap-cms](22nd February 2026)
+- Vim startup commands - [https://www.oliverdavies.uk/blog/vim-startup-commands](21st February 2026)
+- Using .localhost URLs for local development - [https://www.oliverdavies.uk/blog/localhost-urls](21st February 2026)
 
 <!-- End latest blog posts -->
 
