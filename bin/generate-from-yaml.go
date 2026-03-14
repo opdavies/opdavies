@@ -22,7 +22,7 @@ type Testimonial struct {
 }
 
 func main() {
-	data, err := ioutil.ReadFile("data.yaml")
+	data, err := ioutil.ReadFile("bin/testimonials.yaml")
 	if err != nil {
 		panic(err)
 	}
