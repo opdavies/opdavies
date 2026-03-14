@@ -17,6 +17,11 @@ I write and contribute to open-source code, including Drupal core. You can see m
 - [Reversing a YAML list](https://www.oliverdavies.uk/blog/reversing-yaml-list) - 22nd February 2026
 - [Using Sculpin with Decap CMS](https://www.oliverdavies.uk/blog/sculpin-decap-cms) - 22nd February 2026
 - [Vim startup commands](https://www.oliverdavies.uk/blog/vim-startup-commands) - 21st February 2026
+- [Using .localhost URLs for local development](https://www.oliverdavies.uk/blog/localhost-urls) - 21st February 2026
+- [Creating recipes for Drupal Gather](https://www.oliverdavies.uk/blog/creating-recipes-drupal-gather) - 13th February 2026
+- [Simplifying Drupal's default.settings.php file with Vim](https://www.oliverdavies.uk/blog/deleting-comments-blank-lines-vim) - 12th February 2026
+- [Parsing a large XML file with xq](https://www.oliverdavies.uk/blog/parsing-xml-file-xq) - 11th February 2026
+- [Debugging errors in Process Compose](https://www.oliverdavies.uk/blog/debugging-process-compose-errors) - 9th February 2026
 
 <!-- End latest blog posts -->
 
@@ -62,6 +67,7 @@ Well done. You've created a really excellent resource here that has the potentia
 
 <!-- Start latest contributions -->
 
+- [Pushed to tag 2026-03-14-14.51.57 to opdavies/oliverdavies.uk](https://git.oliverdavies.uk/opdavies/oliverdavies.uk/src/tag/2026-03-14-14.51.57) - 14th March 2026
 - [Pushed to main at opdavies/oliverdavies.uk](https://git.oliverdavies.uk/opdavies/oliverdavies.uk/commit/3303533a6caf8086482c85e2b736b02a5608c205) - 14th March 2026
 - [Pushed to tag 2026-03-14-09.49.52 to opdavies/nix-config](https://git.oliverdavies.uk/opdavies/nix-config/src/tag/2026-03-14-09.49.52) - 14th March 2026
 - [Pushed to main at opdavies/nix-config](https://git.oliverdavies.uk/opdavies/nix-config/commit/4aa36d044a1fa28e657743b72c438c8bd836cd9d) - 14th March 2026
@@ -81,6 +87,5 @@ Well done. You've created a really excellent resource here that has the potentia
 - [Pushed to 1.x at opdavies/drupal-gather](https://git.oliverdavies.uk/opdavies/drupal-gather/commit/98d3d346044a38968ea25ee5581eb6325072d40c) - 13th March 2026
 - [Pushed to main at opdavies/books](https://git.oliverdavies.uk/opdavies/books/commit/7a3add82e8add223e007b3a748e2ec7e0bfee8b7) - 12th March 2026
 - [Pushed to tag sculpin-from-scratch/2026-03-12-20.52.48 to opdavies/books](https://git.oliverdavies.uk/opdavies/books/src/tag/sculpin-from-scratch/2026-03-12-20.52.48) - 12th March 2026
-- [Pushed to main at opdavies/books](/opdavies/books/compare/5edbdd7e2eb6b900425728b47392be40a3dc3d93...84bb07bff0e872712d3e356c5669e05d35b62ca5) - 12th March 2026
 
 <!-- End latest contributions -->
