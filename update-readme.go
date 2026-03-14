@@ -38,6 +38,10 @@ func isContribution(title, feedURL string) bool {
 			continue
 		}
 
+		if strings.Contains(titleLower, "pushed to opdavies") {
+			continue
+		}
+
 		if strings.Contains(titleLower, k) {
 			return true
 		}
