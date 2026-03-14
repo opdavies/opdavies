@@ -1,5 +1,13 @@
 # opdavies
 
+I'm Oliver, a Software Developer and Consultant with 19 years of experience.
+
+I'm an Acquia Triple Certified Drupal Expert who has worked on Drupal.org for the Drupal Association, spoken and mentored at DrupalCons and DrupalCamps, and maintain several popular Drupal modules and themes.
+
+I regularly [present talks and workshops](https://www.oliverdavies.uk) at user groups and conferences.
+
+I write and contribute to open-source code, including Drupal core. You can see my projects and contributions on my [Drupal.org](https://www.drupal.org/u/opdavies) and [GitHub](https://www.github.com/opdavies) profiles.
+
 ## Latest Blog Posts
 
 <!-- Start latest blog posts -->
