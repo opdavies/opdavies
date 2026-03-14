@@ -112,7 +112,7 @@ func updateLatestBlogPosts() {
 	for _, item := range feed.Items[:limit] {
 		t := item.PublishedParsed
 		dateStr := fmt.Sprintf("%s %s %d", ordinal(t.Day()), t.Month(), t.Year())
-		lines = append(lines, fmt.Sprintf("- %s - [%s](%s)", item.Title, item.Link, dateStr))
+		lines = append(lines, fmt.Sprintf("- %s - [%s](%s)", dateStr, item.Title, item.Link))
 	}
 
 	updateSectionInReadme(startMarker, endMarker, strings.Join(lines, "\n"))
