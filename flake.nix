@@ -8,11 +8,11 @@
     inputs:
     inputs.flake-parts.lib.mkFlake { inherit inputs; } {
       imports = [
-        ./nix/dev-shell.nix
-        ./nix/formatter.nix
-        ./nix/packages/generate-from-yaml
-        ./nix/packages/update-readme
-        ./nix/systems.nix
+        ./flake-parts/dev-shell.nix
+        ./flake-parts/formatter.nix
+        ./flake-parts/packages/generate-from-yaml
+        ./flake-parts/packages/update-readme
+        ./flake-parts/systems.nix
       ];
     };
 }
