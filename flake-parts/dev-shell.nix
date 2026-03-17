@@ -1,20 +1,22 @@
 {
   perSystem =
-    { pkgs, self', ... }:
+    {
+      lib,
+      pkgs,
+      self',
+      ...
+    }:
     {
       devShells.default = pkgs.mkShell {
-        inputsFrom = [
-          self'.packages.generate-from-yaml
-          self'.packages.update-readme
-        ];
+        inputsFrom = lib.attrValues self'.packages;
 
-        packages = with pkgs; [
-          gopls
-          nixd
-
-          self'.packages.generate-from-yaml
-          self'.packages.update-readme
-        ];
+        packages =
+          with pkgs;
+          [
+            gopls
+            nixd
+          ]
+          + lib.attrValues self'.packages;
       };
     };
 }
