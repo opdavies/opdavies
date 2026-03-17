@@ -10,8 +10,7 @@
       imports = [
         ./flake-parts/dev-shell.nix
         ./flake-parts/formatter.nix
-        ./flake-parts/packages/generate-from-yaml
-        ./flake-parts/packages/update-readme
+        ./flake-parts/packages
         ./flake-parts/systems.nix
       ];
     };
