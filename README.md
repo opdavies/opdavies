@@ -8,6 +8,12 @@ I regularly [present talks and workshops](https://www.oliverdavies.uk/presentati
 
 I write and contribute to open-source code, including Drupal core. You can see my projects and contributions on my [Drupal.org](https://www.drupal.org/u/opdavies) and [GitHub](https://www.github.com/opdavies) profiles, and [my Forgejo instance](https://git.oliverdavies.uk).
 
+## Table of Contents
+
+- [Latest Blog Posts](#latest-blog-posts)
+- [Latest Testimonials](#latest-testimonials)
+- [Latest Open Source Contributions](#latest-open-source-contributions)
+
 ## Latest Blog Posts
 
 <!-- Start latest blog posts -->
