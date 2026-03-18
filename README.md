@@ -71,6 +71,26 @@ We will be glad to have him back next time.
 
 This course is really great and I've recommended it to my coworkers here at Palantir.net.
 
+### Frank Landry
+
+The course was very informative. One of the biggest pain points with Drupal testing was that there was no clear and definitive guide on setting up the php unit XML file to get functional and kernel tests working right away. Your guide was fantastic and I will definitely be using it going forward in my module development for work.
+
+### Adam Nuttall - Drupal Engineer
+
+Well done. You've created a really excellent resource here that has the potential to bring Drupal development forward a huge leap. You've managed to simplify and share some often complex seeming issues.
+
+### Kevin Coyle - Design System Engineering Consultant
+
+I'm liking your short emails. They're just the right length that isn't too distracting but I'm able to consume it in a single glance.
+
+### Boris Böhne - Drupal Developer
+
+I really love your daily posts. They are opinionated, and this gives room for thoughts, I appreciate this.
+
+### Matthieu Scarset - Drupal Expert
+
+Following your "Automated tests" emails and they are great! Such a pleasant reading. I love how you start from the very beginning and keeping things simple, step by step. Looking forward to more content!
+
 <!-- End latest testimonials -->
 
 ## Latest Open Source Contributions

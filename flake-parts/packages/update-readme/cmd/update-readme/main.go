@@ -160,7 +160,7 @@ func updateLatestTestimonials() {
 		endMarker       = "<!-- End latest testimonials -->"
 	)
 
-	numToShow := 5
+	numToShow := 10
 
 	files, err := ioutil.ReadDir(testimonialsDir)
 
