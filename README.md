@@ -18,6 +18,8 @@ I write and contribute to open-source code, including Drupal core. You can see m
 
 <!-- Start latest blog posts -->
 
+- [Speaking at PHP Sussex](https://www.oliverdavies.uk/blog/speaking-php-sussex) - 5th April 2026
+- [My `create-note` script](https://www.oliverdavies.uk/blog/create-note-script) - 25th March 2026
 - [Building a dynamic README.md](https://www.oliverdavies.uk/blog/building-dynamic-readme) - 14th March 2026
 - [Using Process Compose with Sculpin, Browsersync and Decap CMS](https://www.oliverdavies.uk/blog/using-process-compose-with-sculpin-browsersync-and-decap-cms) - 1st March 2026
 - [Reversing a YAML list](https://www.oliverdavies.uk/blog/reversing-yaml-list) - 22nd February 2026
@@ -26,8 +28,6 @@ I write and contribute to open-source code, including Drupal core. You can see m
 - [Using .localhost URLs for local development](https://www.oliverdavies.uk/blog/localhost-urls) - 21st February 2026
 - [Creating recipes for Drupal Gather](https://www.oliverdavies.uk/blog/creating-recipes-drupal-gather) - 13th February 2026
 - [Simplifying Drupal's default.settings.php file with Vim](https://www.oliverdavies.uk/blog/deleting-comments-blank-lines-vim) - 12th February 2026
-- [Parsing a large XML file with xq](https://www.oliverdavies.uk/blog/parsing-xml-file-xq) - 11th February 2026
-- [Debugging errors in Process Compose](https://www.oliverdavies.uk/blog/debugging-process-compose-errors) - 9th February 2026
 
 <!-- End latest blog posts -->
 
@@ -87,39 +87,31 @@ I'm liking your short emails. They're just the right length that isn't too distr
 
 I really love your daily posts. They are opinionated, and this gives room for thoughts, I appreciate this.
 
-### Matthieu Scarset - Drupal Expert
-
-Following your "Automated tests" emails and they are great! Such a pleasant reading. I love how you start from the very beginning and keeping things simple, step by step. Looking forward to more content!
-
 <!-- End latest testimonials -->
 
 ## Latest Open Source Contributions
 
 <!-- Start latest contributions -->
 
-- [Pushed to national-rail-enquiries-feed-parser](https://github.com/opdavies/national-rail-enquiries-feed-parser/compare/32a50b6691...339774d110) - 17th March 2026
-- [Synced commits to main at opdavies/national-rail-enquiries-feed-p... from mirror](/opdavies/national-rail-enquiries-feed-parser/compare/714eeb99b2043076e674c4812b46fc9768f182ae...32a50b669117ecc4778e7233d73b0113c38d78aa) - 14th March 2026
-- [Pushed to national-rail-enquiries-feed-parser](https://github.com/opdavies/national-rail-enquiries-feed-parser/compare/d9b1a5b8ba...32a50b6691) - 14th March 2026
-- [Pushed to national-rail-enquiries-feed-parser](https://github.com/opdavies/national-rail-enquiries-feed-parser/compare/de09ebfa40...d9b1a5b8ba) - 14th March 2026
-- [Pushed to national-rail-enquiries-feed-parser](https://github.com/opdavies/national-rail-enquiries-feed-parser/compare/ce6d23f88a...de09ebfa40) - 14th March 2026
-- [Pushed to national-rail-enquiries-feed-parser](https://github.com/opdavies/national-rail-enquiries-feed-parser/compare/714eeb99b2...ce6d23f88a) - 14th March 2026
-- [Pushed to tag 2026-03-14-14.51.57 to opdavies/oliverdavies.uk](https://git.oliverdavies.uk/opdavies/oliverdavies.uk/src/tag/2026-03-14-14.51.57) - 14th March 2026
-- [Pushed to main at opdavies/oliverdavies.uk](https://git.oliverdavies.uk/opdavies/oliverdavies.uk/commit/3303533a6caf8086482c85e2b736b02a5608c205) - 14th March 2026
-- [Pushed to tag 2026-03-14-09.49.52 to opdavies/nix-config](https://git.oliverdavies.uk/opdavies/nix-config/src/tag/2026-03-14-09.49.52) - 14th March 2026
-- [Pushed to main at opdavies/nix-config](https://git.oliverdavies.uk/opdavies/nix-config/commit/4aa36d044a1fa28e657743b72c438c8bd836cd9d) - 14th March 2026
-- [Pushed to main at opdavies/oliverdavies.uk](https://git.oliverdavies.uk/opdavies/oliverdavies.uk/commit/b001b58f51424b341685b345785eed1419faea40) - 14th March 2026
-- [Pushed to main at opdavies/oliverdavies.uk](https://git.oliverdavies.uk/opdavies/oliverdavies.uk/commit/2104df72d851428ba930945be32f9752e9849d95) - 14th March 2026
-- [Pushed to main at opdavies/oliverdavies.uk](https://git.oliverdavies.uk/opdavies/oliverdavies.uk/commit/3ba7ff6604c1eb7df6c71e650a3082df48c1fec0) - 14th March 2026
-- [Pushed to main at opdavies/oliverdavies.uk](https://git.oliverdavies.uk/opdavies/oliverdavies.uk/commit/62dae6db9afedb9310ded9eff2da0a18fa715949) - 14th March 2026
-- [Pushed to 1.x at opdavies/drupal-gather](https://git.oliverdavies.uk/opdavies/drupal-gather/src/branch/1.x) - 14th March 2026
-- [Pushed to main at opdavies/nix-config](https://git.oliverdavies.uk/opdavies/nix-config/commit/0fd6c81bcf3dfbcb0a9c1e06e950e08d4d38a134) - 14th March 2026
-- [Pushed to 1.x at opdavies/drupal-gather](https://git.oliverdavies.uk/opdavies/drupal-gather/commit/88abbadb3a9d516f89d4b09211122a985ee20507) - 14th March 2026
-- [Pushed to 1.x at opdavies/drupal-gather](/opdavies/drupal-gather/compare/f84c41d1bf9a62113919f838dc17066ed0dee3d2...6a9d607cbb32259526710d01f9f23e2eb0d49ec4) - 14th March 2026
-- [Pushed to 1.x at opdavies/drupal-gather](/opdavies/drupal-gather/compare/c15ec5ad71260a9ec630c2851613e5d3f3f1458e...f84c41d1bf9a62113919f838dc17066ed0dee3d2) - 14th March 2026
-- [Pushed to 1.x at opdavies/drupal-gather](/opdavies/drupal-gather/compare/825602c52b1b23e8081323f53afa587901ee01cf...c15ec5ad71260a9ec630c2851613e5d3f3f1458e) - 13th March 2026
-- [Pushed to 1.x at opdavies/drupal-gather](https://git.oliverdavies.uk/opdavies/drupal-gather/commit/825602c52b1b23e8081323f53afa587901ee01cf) - 13th March 2026
-- [Pushed to 1.x at opdavies/drupal-gather](https://git.oliverdavies.uk/opdavies/drupal-gather/commit/1f4f81f893bab918390a8b40e1676a387ed106fe) - 13th March 2026
-- [Pushed to 1.x at opdavies/drupal-gather](/opdavies/drupal-gather/compare/98d3d346044a38968ea25ee5581eb6325072d40c...c2865181c206d00b0ad28394d51249ca3d64f230) - 13th March 2026
-- [Pushed to 1.x at opdavies/drupal-gather](https://git.oliverdavies.uk/opdavies/drupal-gather/commit/98d3d346044a38968ea25ee5581eb6325072d40c) - 13th March 2026
+- [Pushed to main at opdavies/nix-config](https://git.oliverdavies.uk/opdavies/nix-config/commit/2f3d5c12aa2fcfdc3bd8f7645572c0b61f120125) - 19th April 2026
+- [Pushed to main at opdavies/oliverdavies.uk](https://git.oliverdavies.uk/opdavies/oliverdavies.uk/commit/74caf3695cd38b0cbea45a549900045fc17430c1) - 19th April 2026
+- [Pushed to deploy at opdavies/oliverdavies.uk](https://git.oliverdavies.uk/opdavies/oliverdavies.uk/commit/74caf3695cd38b0cbea45a549900045fc17430c1) - 19th April 2026
+- [Pushed to main at opdavies/oliverdavies.uk](https://git.oliverdavies.uk/opdavies/oliverdavies.uk/commit/d1079d23dc0dbc94664aa9a19a487503088d6a4d) - 19th April 2026
+- [Pushed to deploy at opdavies/oliverdavies.uk](https://git.oliverdavies.uk/opdavies/oliverdavies.uk/commit/d1079d23dc0dbc94664aa9a19a487503088d6a4d) - 19th April 2026
+- [Pushed to main at opdavies/nix-config](/opdavies/nix-config/compare/7d4ae3a3658ff38dc43aea604f5a4e56b30275e2...e045eea894f14d94800582be00eb29309846a745) - 19th April 2026
+- [Pushed to main at opdavies/nix-config](/opdavies/nix-config/compare/32e1c1653250fd4748ea9471bc440becdfed0f80...7d4ae3a3658ff38dc43aea604f5a4e56b30275e2) - 19th April 2026
+- [Pushed to main at opdavies/oliverdavies.uk](https://git.oliverdavies.uk/opdavies/oliverdavies.uk/commit/b80ae925c8abdaad8dc2ea7ee21b6ceb1c3798f7) - 18th April 2026
+- [Pushed to main at opdavies/nix-config](https://git.oliverdavies.uk/opdavies/nix-config/commit/32e1c1653250fd4748ea9471bc440becdfed0f80) - 18th April 2026
+- [Pushed to main at opdavies/nix-config](/opdavies/nix-config/compare/d70f89c487c3867e5a2cbc89562db136432910d7...017a8ba826986ae688e79471e1ceb603c98e12c6) - 18th April 2026
+- [Pushed to main at opdavies/nix-config](https://git.oliverdavies.uk/opdavies/nix-config/commit/d70f89c487c3867e5a2cbc89562db136432910d7) - 18th April 2026
+- [Pushed to deploy at opdavies/oliverdavies.uk](https://git.oliverdavies.uk/opdavies/oliverdavies.uk/commit/b80ae925c8abdaad8dc2ea7ee21b6ceb1c3798f7) - 18th April 2026
+- [Pushed to main at opdavies/oliverdavies.uk](https://git.oliverdavies.uk/opdavies/oliverdavies.uk/commit/a4fe64288b6cea86885d3cb4c00554cab729376d) - 18th April 2026
+- [Pushed to deploy at opdavies/oliverdavies.uk](https://git.oliverdavies.uk/opdavies/oliverdavies.uk/commit/a4fe64288b6cea86885d3cb4c00554cab729376d) - 18th April 2026
+- [Pushed to main at opdavies/notes-tech](https://git.oliverdavies.uk/opdavies/notes-tech/commit/1519c71a81901dfeb796b24224a36fd95a189291) - 18th April 2026
+- [Pushed to main at opdavies/oliverdavies.uk](/opdavies/oliverdavies.uk/compare/7afcdb1e71ccca791fcc2c5572c4692dfa517c41...3ee89774ce47f3d0eaa6fa7f90d7d4801acf2311) - 18th April 2026
+- [Pushed to main at opdavies/nix-config](https://git.oliverdavies.uk/opdavies/nix-config/commit/2d696a3e6c452b06693c8c2b6561cbffa6cc9cea) - 18th April 2026
+- [Pushed to main at opdavies/notes-tech](https://git.oliverdavies.uk/opdavies/notes-tech/commit/735de2eba4b0d3282bba1f64dc4eaa4e31ad8549) - 18th April 2026
+- [Pushed to main at opdavies/nix-config](https://git.oliverdavies.uk/opdavies/nix-config/commit/19df6971317dfd3e2848b2737e62c996eb83d985) - 18th April 2026
+- [Pushed to main at opdavies/nix-config](https://git.oliverdavies.uk/opdavies/nix-config/commit/872962a5cbe76df4c2c545a8ee9d5e9189f4e628) - 18th April 2026
 
 <!-- End latest contributions -->
