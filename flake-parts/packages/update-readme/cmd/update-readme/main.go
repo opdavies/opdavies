@@ -49,6 +49,7 @@ type testimonial struct {
 	Name        string `json:"name"`
 	Description string `json:"description"`
 	Content     string `json:"content"`
+	IsFeatured  bool   `json:"is_featured"`
 }
 
 func main() {
@@ -178,6 +179,22 @@ func latestTestimonials() (string, error) {
 	if len(items) == 0 {
 		return "", fmt.Errorf("%s returned no testimonials", url)
 	}
+
+	// The endpoint serves every testimonial and marks the featured ones.
+	// Which to show is this program's decision, not the site's.
+	featured := make([]testimonial, 0, len(items))
+
+	for _, item := range items {
+		if item.IsFeatured {
+			featured = append(featured, item)
+		}
+	}
+
+	if len(featured) == 0 {
+		return "", fmt.Errorf("%s returned no featured testimonials", url)
+	}
+
+	items = featured
 
 	if len(items) > numTestimonials {
 		items = items[:numTestimonials]
