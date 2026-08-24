@@ -44,14 +44,6 @@ Our ongoing advisory collaboration has been consistently valuable; he stays enga
 
 I'd recommend him without hesitation.
 
-### Bharadwaj Pulugundla
-
-Great experience working together.
-
-Quick turnaround, proactive follow-ups, and very knowledgeable.
-
-Would definitely recommend!
-
 ### Mahesh Kumar - Founder of IT Consultancy
 
 Oliver provided excellent Drupal consultancy services throughout the engagement.
@@ -60,31 +52,11 @@ He demonstrated strong technical expertise in Drupal development, including cust
 
 We would highly recommend him.
 
-### Chris Knox - Creative Director
-
-I have worked with Oliver several times over the last few years.
-
-He is a great addition to any team, he collaborates and communicates well, and absolutely knows his stuff!
-
 ### Technical Director - European knowledge platform
 
 Oliver devised a creative and original approach to Drupal theme switching based on Tailwind and provided us with the building blocks and basic theming.
 
 He gave several helpful mentoring sessions with our front end developer to support us to build this approach into our site.
-
-### Luis Ibhiabor - IT Teacher at Activate Learning (Reading College)
-
-We are indeed grateful to Oliver for his sessions with our students.
-
-His presentation gave the students the opportunity to gain valuable insights for web application development.
-
-The students had a chance to hear from a true expert in the field and watch him as he explained various programming concepts for both frontend and backend applications development.
-
-Students greatly enjoyed the live coding session and felt it was an eye opener for them about web technologies including frontend and backend development languages and tools.
-
-He is dedicated and passionate about frontend and backend development.
-
-We will be glad to have him back next time.
 
 ### Joe Howell - Director at Bastion Insurance
 
@@ -94,39 +66,57 @@ As an insurance provider, some of our products and services don't naturally fit 
 
 Friendly, flexible and diligent - I wouldn't hesitate to recommend Oliver to anyone looking for a Drupal Developer to progress their next project.
 
-### Adam Nuttall - Drupal Engineer
+### Duncan Davidson - Director at Rohallion
 
-Well done.
+Oliver is a pleasure to work with, and I would engage him again without hesitation.
 
-You've created a really excellent resource here that has the potential to bring Drupal development forward a huge leap.
+He communicates regularly, ensures that he meets requirements, and suggests improvements to the potential solutions to the brief.
 
-You've managed to simplify and share some often complex seeming issues.
+### Mick Felton - Publisher at Poetry Wales Press Ltd (Seren Books)
 
-### Tom Evans
+Working with Oliver on the Seren website has been easy and beneficial.
 
-I had the opportunity and good fortune to work with Oliver solving two problems that I was having on a Drupal Commerce site.
+As well as providing general maintenance support, he built a new Drupal module which integrated with our partners Glassboxx so that we could sell ebooks directly from our website.
 
-I have done several Drupal sites using UberCart, but since it is deprecated, I chose to use Commerce.
+Oliver worked closely with the team at Glassboxx to create the integration which needed to communicate with the Glassboxx app so that users could download their purchases. He was able to resolve issues which came up along the way in order to create a functioning module which we now use on our site.
 
-I had searched, posted to forums, and other normal means to find answers to my problems, to no response and to no avail.
+Oliver has extensive knowledge of Drupal and his familiarity with the Seren site meant he was able to fix problems quickly and efficiently as they arose.
 
-I got a referral to Oliver and scheduled an appointment to discuss the problems on a Zoom call.
+He is reliable and has always been willing to discuss new ideas for how the site could function.
 
-After showing him via screen share where I was stumped, he offered different approaches to what I was doing, which I was fine with as long as it worked.
+We would recommend working with him for his invaluable knowledge and ability to find solutions to problems at short notice. It has been a pleasure to work with him over the years.
 
-Once we solved the first problem, I was really elated and then focused on the second one, which was an easier fix.
+### Michael Itkoff - Co-Founder
 
-So in a short period of time, both problems were fixed and tested.
+For over a decade we have worked with Oliver on a number of different projects.
 
-I found Oliver was affable and easy to work with.
+Initially our collaboration consisted of web maintenance and troubleshooting but we soon tapped Oliver to design, build and maintain a custom awards site which includes both submission and judging functionality.
 
-He has a strong work ethic and a desire to solve problems for his customers and can recommend working with him.
+Oliver has deep and wide-ranging skills and I would certainly recommend his services!
 
-I think one of his strengths is to find alternative solutions to problems.
+### Jon Hallett - Senior Systems Administrator at the University of Bristol
 
-### Stephen Mulvihill - Solutions Architect
+We use Oliver for maintaining a couple of Drupal sites for which we no longer have the skills ourselves.
 
-I like the "$ git log -S" and "$ git log --grep" commands, will definitely be using these, thanks!
+We became aware of Oliver through his work in the Drupal community, and about a year ago we approached him to help us with the deep dive aspects of maintaining and developing Drupal sites.
+
+He's been really helpful and very responsive.
+
+Much appreciated!
+
+### Anonymous - Marketing Strategist
+
+We have only worked together for a short while but I can see Oliver is a Drupal expert.
+
+His technical knowledge means we have been able to make improvements to the sites we manage quickly and efficiently.
+
+If we have complex issues to contend with in the future I feel confident he will be able to deal with them.
+
+### Josh Mitchell - CTO at the Drupal Association
+
+Oliver is a skilled Drupal Developer with a passion for the Drupal community. As his direct supervisor, I was able to watch Oliver grow with the Drupal Association and contribute an amazing amount of effort and integrity to all of his work.
+
+Everything we have thrown at Oliver, he has approached with an open and flexible mind that has allowed him to work on a wide range of projects and features for Drupal products.
 
 <!-- End latest testimonials -->
 
