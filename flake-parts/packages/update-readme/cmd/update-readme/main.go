@@ -20,6 +20,7 @@ import (
 const (
 	readmeFile     = "README.md"
 	defaultBaseURL = "https://www.oliverdavies.uk"
+	userAgent      = "opdavies-update-readme (+https://github.com/opdavies/opdavies)"
 
 	numBlogPosts    = 10
 	numTestimonials = 10
@@ -105,7 +106,17 @@ func run() error {
 func fetchJSON(url string, into any) error {
 	client := &http.Client{Timeout: 30 * time.Second}
 
-	resp, err := client.Get(url)
+	req, err := http.NewRequest(http.MethodGet, url, nil)
+	if err != nil {
+		return fmt.Errorf("building request for %s: %w", url, err)
+	}
+
+	// Say who this is. Go's default agent is indistinguishable from any
+	// other script, which is no help to whoever is reading the logs or
+	// deciding whether to let the request through.
+	req.Header.Set("User-Agent", userAgent)
+
+	resp, err := client.Do(req)
 	if err != nil {
 		return fmt.Errorf("fetching %s: %w", url, err)
 	}
