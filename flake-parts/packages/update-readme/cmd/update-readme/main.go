@@ -23,7 +23,7 @@ const (
 	userAgent      = "opdavies-update-readme (+https://github.com/opdavies/opdavies)"
 
 	numBlogPosts    = 10
-	numTestimonials = 10
+	numTestimonials = 5
 )
 
 // baseURL allows the source site to be pointed elsewhere, so the program can

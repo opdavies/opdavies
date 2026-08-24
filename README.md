@@ -72,51 +72,5 @@ Oliver is a pleasure to work with, and I would engage him again without hesitati
 
 He communicates regularly, ensures that he meets requirements, and suggests improvements to the potential solutions to the brief.
 
-### Mick Felton - Publisher at Poetry Wales Press Ltd (Seren Books)
-
-Working with Oliver on the Seren website has been easy and beneficial.
-
-As well as providing general maintenance support, he built a new Drupal module which integrated with our partners Glassboxx so that we could sell ebooks directly from our website.
-
-Oliver worked closely with the team at Glassboxx to create the integration which needed to communicate with the Glassboxx app so that users could download their purchases. He was able to resolve issues which came up along the way in order to create a functioning module which we now use on our site.
-
-Oliver has extensive knowledge of Drupal and his familiarity with the Seren site meant he was able to fix problems quickly and efficiently as they arose.
-
-He is reliable and has always been willing to discuss new ideas for how the site could function.
-
-We would recommend working with him for his invaluable knowledge and ability to find solutions to problems at short notice. It has been a pleasure to work with him over the years.
-
-### Michael Itkoff - Co-Founder
-
-For over a decade we have worked with Oliver on a number of different projects.
-
-Initially our collaboration consisted of web maintenance and troubleshooting but we soon tapped Oliver to design, build and maintain a custom awards site which includes both submission and judging functionality.
-
-Oliver has deep and wide-ranging skills and I would certainly recommend his services!
-
-### Jon Hallett - Senior Systems Administrator at the University of Bristol
-
-We use Oliver for maintaining a couple of Drupal sites for which we no longer have the skills ourselves.
-
-We became aware of Oliver through his work in the Drupal community, and about a year ago we approached him to help us with the deep dive aspects of maintaining and developing Drupal sites.
-
-He's been really helpful and very responsive.
-
-Much appreciated!
-
-### Anonymous - Marketing Strategist
-
-We have only worked together for a short while but I can see Oliver is a Drupal expert.
-
-His technical knowledge means we have been able to make improvements to the sites we manage quickly and efficiently.
-
-If we have complex issues to contend with in the future I feel confident he will be able to deal with them.
-
-### Josh Mitchell - CTO at the Drupal Association
-
-Oliver is a skilled Drupal Developer with a passion for the Drupal community. As his direct supervisor, I was able to watch Oliver grow with the Drupal Association and contribute an amazing amount of effort and integrity to all of his work.
-
-Everything we have thrown at Oliver, he has approached with an open and flexible mind that has allowed him to work on a wide range of projects and features for Drupal products.
-
 <!-- End latest testimonials -->
 
