@@ -1,74 +1,228 @@
+// Command update-readme refreshes the generated sections of README.md from
+// oliverdavies.uk.
+//
+// That site is the canonical source. This repository holds no copy of the
+// content it displays: it asks for /blog.json and /testimonials.json and
+// rewrites the marked sections with what comes back.
 package main
 
 import (
+	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"html"
 	"net/http"
-	"path/filepath"
-	"sort"
+	"os"
+	"regexp"
 	"strings"
 	"time"
-
-	"github.com/mmcdole/gofeed"
 )
 
-const readmeFile = "README.md"
+const (
+	readmeFile     = "README.md"
+	defaultBaseURL = "https://www.oliverdavies.uk"
 
-func cleanContributionTitle(title string) string {
-	prefix := "opdavies "
+	numBlogPosts    = 10
+	numTestimonials = 10
+)
 
-	if strings.HasPrefix(strings.ToLower(title), prefix) {
-		title = title[len(prefix):]
+// baseURL allows the source site to be pointed elsewhere, so the program can
+// be run against a local build before a change to the site is deployed.
+func baseURL() string {
+	if url := os.Getenv("SITE_URL"); url != "" {
+		return strings.TrimSuffix(url, "/")
 	}
 
-	if len(title) > 0 {
-		title = strings.ToUpper(title[:1]) + title[1:]
-	}
-
-	return title
+	return defaultBaseURL
 }
 
-func isContribution(title, feedURL string) bool {
-	titleLower := strings.ToLower(title)
+type blogFeed struct {
+	Items []struct {
+		Title         string `json:"title"`
+		URL           string `json:"url"`
+		DatePublished string `json:"date_published"`
+	} `json:"items"`
+}
 
-	keywords := []string{"commit", "pushed", "pull request", "opened issue", "patch", "merge request"}
-
-	for _, k := range keywords {
-		if strings.Contains(titleLower, "at opdavies/opdavies") {
-			continue
-		}
-
-		if strings.Contains(titleLower, "pushed to opdavies") {
-			continue
-		}
-
-		if strings.Contains(titleLower, k) {
-			return true
-		}
-	}
-
-	return false
+// The testimonials endpoint returns a bare array: it is a list, not a feed.
+type testimonial struct {
+	Name        string `json:"name"`
+	Description string `json:"description"`
+	Content     string `json:"content"`
 }
 
 func main() {
-	updateLatestBlogPosts()
-	updateLatestTestimonials()
-	updateLatestContributions()
+	if err := run(); err != nil {
+		// Fail loudly. Quietly carrying on is how this stopped updating
+		// without anyone noticing.
+		fmt.Fprintln(os.Stderr, "update-readme:", err)
+		os.Exit(1)
+	}
 }
 
-func normalizeContributionTitle(title string) string {
-	lower := strings.ToLower(title)
+func run() error {
+	readme, err := os.ReadFile(readmeFile)
+	if err != nil {
+		return fmt.Errorf("reading %s: %w", readmeFile, err)
+	}
 
-	// Fix "pushed repo" → "pushed to repo"
-	if strings.Contains(lower, " pushed ") && !strings.Contains(lower, " pushed to ") {
-		parts := strings.SplitN(title, " pushed ", 2)
+	posts, err := latestBlogPosts()
+	if err != nil {
+		return err
+	}
 
-		if len(parts) == 2 {
-			return parts[0] + " pushed to " + parts[1]
+	testimonials, err := latestTestimonials()
+	if err != nil {
+		return err
+	}
+
+	content := string(readme)
+
+	for _, section := range []struct{ name, body string }{
+		{"latest blog posts", posts},
+		{"latest testimonials", testimonials},
+	} {
+		content, err = replaceSection(content, section.name, section.body)
+		if err != nil {
+			return err
 		}
 	}
 
-	return title
+	if content == string(readme) {
+		fmt.Println("README.md is already up to date.")
+
+		return nil
+	}
+
+	if err := os.WriteFile(readmeFile, []byte(content), 0o644); err != nil {
+		return fmt.Errorf("writing %s: %w", readmeFile, err)
+	}
+
+	fmt.Println("README.md updated.")
+
+	return nil
+}
+
+func fetchJSON(url string, into any) error {
+	client := &http.Client{Timeout: 30 * time.Second}
+
+	resp, err := client.Get(url)
+	if err != nil {
+		return fmt.Errorf("fetching %s: %w", url, err)
+	}
+
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK {
+		return fmt.Errorf("fetching %s: %s", url, resp.Status)
+	}
+
+	if err := json.NewDecoder(resp.Body).Decode(into); err != nil {
+		return fmt.Errorf("decoding %s: %w", url, err)
+	}
+
+	return nil
+}
+
+func latestBlogPosts() (string, error) {
+	url := baseURL() + "/blog.json"
+
+	var feed blogFeed
+
+	if err := fetchJSON(url, &feed); err != nil {
+		return "", err
+	}
+
+	if len(feed.Items) == 0 {
+		return "", fmt.Errorf("%s returned no posts", url)
+	}
+
+	items := feed.Items
+	if len(items) > numBlogPosts {
+		items = items[:numBlogPosts]
+	}
+
+	var lines []string
+
+	for _, item := range items {
+		date, err := time.Parse(time.RFC3339, item.DatePublished)
+		if err != nil {
+			return "", fmt.Errorf("parsing date for %q: %w", item.Title, err)
+		}
+
+		lines = append(lines, fmt.Sprintf("- [%s](%s) - %s", item.Title, item.URL, formatDate(date)))
+	}
+
+	return strings.Join(lines, "\n"), nil
+}
+
+func latestTestimonials() (string, error) {
+	url := baseURL() + "/testimonials.json"
+
+	var items []testimonial
+
+	if err := fetchJSON(url, &items); err != nil {
+		return "", err
+	}
+
+	if len(items) == 0 {
+		return "", fmt.Errorf("%s returned no testimonials", url)
+	}
+
+	if len(items) > numTestimonials {
+		items = items[:numTestimonials]
+	}
+
+	var sections []string
+
+	for _, item := range items {
+		heading := "### " + item.Name
+
+		if item.Description != "" {
+			heading += " - " + item.Description
+		}
+
+		sections = append(sections, heading+"\n\n"+markdownFromHTML(item.Content))
+	}
+
+	return strings.Join(sections, "\n\n"), nil
+}
+
+var (
+	linkPattern      = regexp.MustCompile(`(?is)<a\b[^>]*href="([^"]*)"[^>]*>(.*?)</a>`)
+	paragraphPattern = regexp.MustCompile(`(?i)</p>`)
+	tagPattern       = regexp.MustCompile(`(?s)<[^>]+>`)
+	blankLinePattern = regexp.MustCompile(`\n{3,}`)
+)
+
+// markdownFromHTML turns the rendered HTML back into the Markdown a README
+// wants. The input is Sculpin's output from Markdown, so it is paragraphs and
+// the occasional link rather than arbitrary HTML.
+func markdownFromHTML(in string) string {
+	out := linkPattern.ReplaceAllString(in, "[$2]($1)")
+	out = paragraphPattern.ReplaceAllString(out, "\n\n")
+	out = tagPattern.ReplaceAllString(out, "")
+	out = html.UnescapeString(out)
+	out = blankLinePattern.ReplaceAllString(out, "\n\n")
+
+	return strings.TrimSpace(out)
+}
+
+func replaceSection(content, name, body string) (string, error) {
+	start := fmt.Sprintf("<!-- Start %s -->", name)
+	end := fmt.Sprintf("<!-- End %s -->", name)
+
+	startIdx := strings.Index(content, start)
+	endIdx := strings.Index(content, end)
+
+	if startIdx == -1 || endIdx == -1 || startIdx > endIdx {
+		return "", fmt.Errorf("could not find markers %q and %q in %s", start, end, readmeFile)
+	}
+
+	return content[:startIdx+len(start)] + "\n\n" + body + "\n\n" + content[endIdx:], nil
+}
+
+func formatDate(t time.Time) string {
+	return fmt.Sprintf("%s %s %d", ordinal(t.Day()), t.Month(), t.Year())
 }
 
 func ordinal(day int) string {
@@ -85,289 +239,5 @@ func ordinal(day int) string {
 		return fmt.Sprintf("%drd", day)
 	default:
 		return fmt.Sprintf("%dth", day)
-	}
-}
-
-func updateLatestBlogPosts() {
-	const (
-		blogFeedURL = "https://www.oliverdavies.uk/rss/blog.xml"
-		startMarker = "<!-- Start latest blog posts -->"
-		endMarker   = "<!-- End latest blog posts -->"
-		numToShow   = 10
-	)
-
-	resp, err := http.Get(blogFeedURL)
-
-	if err != nil {
-		fmt.Println("Error fetching RSS feed:", err)
-
-		return
-	}
-
-	defer resp.Body.Close()
-
-	body, err := ioutil.ReadAll(resp.Body)
-
-	if err != nil {
-		fmt.Println("Error reading RSS feed:", err)
-
-		return
-	}
-
-	fp := gofeed.NewParser()
-	feed, err := fp.ParseString(string(body))
-
-	if err != nil {
-		fmt.Println("Error parsing RSS feed:", err)
-
-		return
-	}
-
-	// Sort items by published date descending
-	sort.Slice(feed.Items, func(i, j int) bool {
-		ti, tj := feed.Items[i].PublishedParsed, feed.Items[j].PublishedParsed
-
-		if ti == nil || tj == nil {
-			return false
-		}
-
-		return ti.After(*tj)
-	})
-
-	limit := numToShow
-
-	if len(feed.Items) < limit {
-		limit = len(feed.Items)
-	}
-
-	var lines []string
-
-	for _, item := range feed.Items[:limit] {
-		t := item.PublishedParsed
-		dateStr := fmt.Sprintf("%s %s %d", ordinal(t.Day()), t.Month(), t.Year())
-		lines = append(lines, fmt.Sprintf("- [%s](%s) - %s", item.Title, item.Link, dateStr))
-	}
-
-	updateSectionInReadme(startMarker, endMarker, strings.Join(lines, "\n"))
-
-	fmt.Println("README.md updated with latest blog posts.")
-}
-
-func updateLatestTestimonials() {
-	const (
-		testimonialsDir = "testimonials"
-		startMarker     = "<!-- Start latest testimonials -->"
-		endMarker       = "<!-- End latest testimonials -->"
-	)
-
-	numToShow := 10
-
-	files, err := ioutil.ReadDir(testimonialsDir)
-
-	if err != nil {
-		fmt.Println("Error reading testimonials directory:", err)
-
-		return
-	}
-
-	var filenames []string
-
-	for _, f := range files {
-		if !f.IsDir() && strings.HasSuffix(f.Name(), ".md") {
-			filenames = append(filenames, f.Name())
-		}
-	}
-
-	sort.Strings(filenames)
-
-	if len(filenames) < numToShow {
-		numToShow = len(filenames)
-	}
-
-	latest := filenames[len(filenames)-numToShow:]
-
-	var formatted []string
-
-	// Reverse order so newest appears first
-	for i := len(latest) - 1; i >= 0; i-- {
-		file := latest[i]
-
-		content, err := ioutil.ReadFile(filepath.Join(testimonialsDir, file))
-
-		if err != nil {
-			fmt.Println("Error reading file:", file, err)
-
-			continue
-		}
-
-		lines := strings.Split(string(content), "\n")
-		name, desc := "", ""
-		bodyStart := 0
-
-		// Detect YAML front matter
-		if len(lines) > 0 && strings.TrimSpace(lines[0]) == "---" {
-			yamlEnd := -1
-
-			for j := 1; j < len(lines); j++ {
-				if strings.TrimSpace(lines[j]) == "---" {
-					yamlEnd = j
-					break
-				}
-
-				line := strings.TrimSpace(lines[j])
-
-				if strings.HasPrefix(line, "name:") {
-					name = strings.TrimSpace(strings.TrimPrefix(line, "name:"))
-				}
-
-				if strings.HasPrefix(line, "description:") {
-					desc = strings.TrimSpace(strings.TrimPrefix(line, "description:"))
-				}
-			}
-
-			if yamlEnd != -1 {
-				bodyStart = yamlEnd + 1
-			}
-		}
-
-		body := strings.Join(lines[bodyStart:], "\n")
-		body = strings.TrimSpace(body)
-
-		header := "### " + name
-		if desc != "" {
-			header += " - " + desc
-		}
-
-		formatted = append(formatted, fmt.Sprintf("%s\n\n%s", header, body))
-	}
-
-	updateSectionInReadme(startMarker, endMarker, strings.Join(formatted, "\n\n"))
-
-	fmt.Println("README.md updated with latest testimonials.")
-}
-
-func updateLatestContributions() {
-	const (
-		startMarker = "<!-- Start latest contributions -->"
-		endMarker   = "<!-- End latest contributions -->"
-		numToShow   = 20
-	)
-
-	feeds := []string{
-		"https://git.drupalcode.org/opdavies.atom",
-		"https://git.oliverdavies.uk/opdavies.atom",
-		"https://github.com/opdavies.atom",
-	}
-
-	type Contribution struct {
-		Date  time.Time
-		Link  string
-		Title string
-	}
-
-	var all []Contribution
-
-	fp := gofeed.NewParser()
-
-	for _, url := range feeds {
-		resp, err := http.Get(url)
-
-		if err != nil {
-			fmt.Println("Error fetching feed:", url, err)
-
-			continue
-		}
-
-		body, err := ioutil.ReadAll(resp.Body)
-		resp.Body.Close()
-
-		if err != nil {
-			fmt.Println("Error reading feed:", url, err)
-
-			continue
-		}
-
-		feed, err := fp.ParseString(string(body))
-
-		if err != nil {
-			fmt.Println("Error parsing feed:", url, err)
-
-			continue
-		}
-
-		for _, item := range feed.Items {
-			// Skip if no date
-			if item.PublishedParsed == nil {
-				continue
-			}
-
-			title := normalizeContributionTitle(item.Title)
-			title = cleanContributionTitle(title)
-
-			titleLower := strings.ToLower(title)
-			date := *item.PublishedParsed
-
-			// Skip issue activity
-			if strings.Contains(titleLower, "opened issue") {
-				continue
-			}
-
-			if isContribution(title, url) {
-				all = append(all, Contribution{
-					Date:  date,
-					Link:  item.Link,
-					Title: title,
-				})
-			}
-		}
-	}
-
-	// Sort descending by date
-	sort.Slice(all, func(i, j int) bool { return all[i].Date.After(all[j].Date) })
-
-	limit := numToShow
-
-	if len(all) < limit {
-		limit = len(all)
-	}
-
-	var lines []string
-
-	for _, e := range all[:limit] {
-		dateStr := fmt.Sprintf("%s %s %d", ordinal(e.Date.Day()), e.Date.Month(), e.Date.Year())
-		lines = append(lines, fmt.Sprintf("- [%s](%s) - %s", e.Title, e.Link, dateStr))
-	}
-
-	updateSectionInReadme(startMarker, endMarker, strings.Join(lines, "\n"))
-
-	fmt.Println("README.md updated with recent contributions.")
-}
-
-func updateSectionInReadme(startMarker, endMarker, newSection string) {
-	readmeContent, err := ioutil.ReadFile(readmeFile)
-
-	if err != nil {
-		fmt.Println("Error reading README.md:", err)
-
-		return
-	}
-
-	contentStr := string(readmeContent)
-
-	startIdx := strings.Index(contentStr, startMarker)
-	endIdx := strings.Index(contentStr, endMarker)
-
-	if startIdx == -1 || endIdx == -1 || startIdx > endIdx {
-		fmt.Printf("Could not find markers: %s ... %s\n", startMarker, endMarker)
-
-		return
-	}
-
-	newReadme := contentStr[:startIdx+len(startMarker)] + "\n\n" + newSection + "\n\n" + contentStr[endIdx:]
-
-	if err := ioutil.WriteFile(readmeFile, []byte(newReadme), 0644); err != nil {
-		fmt.Println("Error writing README.md:", err)
-
-		return
 	}
 }

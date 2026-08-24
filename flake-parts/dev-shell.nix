@@ -16,7 +16,7 @@
             gopls
             nixd
           ]
-          + lib.attrValues self'.packages;
+          ++ lib.attrValues self'.packages;
       };
     };
 }

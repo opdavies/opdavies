@@ -18,21 +18,17 @@ jobs:
         with:
           persist-credentials: true
 
-      - name: Set up Go
-        uses: actions/setup-go@v4
-        with:
-          go-version: '1.25'
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@main
 
-      - name: Run update-readme.go
-        run: go run update-readme.go
+      - name: Update the README
+        run: nix run .#update-readme
 
-      - name: Configure Git
+      - name: Commit and push any changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Commit & Push changes
-        run: |
           git add README.md
-          git diff --cached --quiet || git commit -m "Automated commit"
+          git diff --cached --quiet && exit 0
+          git commit -m "Update the latest blog posts and testimonials"
           git push

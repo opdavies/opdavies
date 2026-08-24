@@ -10,14 +10,21 @@
 
         src = ./.;
 
-        vendorHash = "sha256-ss7PrNrSuqsqmA/kfe1XpAW9dAeCAM9YlwsuQwn3OMA=";
+        # No dependencies: the program uses only the standard library.
+        vendorHash = null;
 
-        meta.mainProgram = "update-readme";
+        meta = {
+          description = "Update the generated sections of README.md from oliverdavies.uk";
+          mainProgram = "update-readme";
+        };
       };
     in
     {
       packages.update-readme = pkg;
 
-      apps.update-readme.program = lib.getExe pkg;
+      apps.update-readme = {
+        program = lib.getExe pkg;
+        meta.description = "Update the generated sections of README.md from oliverdavies.uk";
+      };
     };
 }

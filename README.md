@@ -12,28 +12,45 @@ I write and contribute to open-source code, including Drupal core. You can see m
 
 - [Latest Blog Posts](#latest-blog-posts)
 - [Latest Testimonials](#latest-testimonials)
-- [Latest Open Source Contributions](#latest-open-source-contributions)
 
 ## Latest Blog Posts
 
 <!-- Start latest blog posts -->
 
-- [Speaking at PHP Sussex](https://www.oliverdavies.uk/blog/speaking-php-sussex) - 5th April 2026
-- [My `create-note` script](https://www.oliverdavies.uk/blog/create-note-script) - 25th March 2026
-- [Building a dynamic README.md](https://www.oliverdavies.uk/blog/building-dynamic-readme) - 14th March 2026
-- [Using Process Compose with Sculpin, Browsersync and Decap CMS](https://www.oliverdavies.uk/blog/using-process-compose-with-sculpin-browsersync-and-decap-cms) - 1st March 2026
-- [Reversing a YAML list](https://www.oliverdavies.uk/blog/reversing-yaml-list) - 22nd February 2026
-- [Using Sculpin with Decap CMS](https://www.oliverdavies.uk/blog/sculpin-decap-cms) - 22nd February 2026
-- [Vim startup commands](https://www.oliverdavies.uk/blog/vim-startup-commands) - 21st February 2026
-- [Using .localhost URLs for local development](https://www.oliverdavies.uk/blog/localhost-urls) - 21st February 2026
-- [Creating recipes for Drupal Gather](https://www.oliverdavies.uk/blog/creating-recipes-drupal-gather) - 13th February 2026
-- [Simplifying Drupal's default.settings.php file with Vim](https://www.oliverdavies.uk/blog/deleting-comments-blank-lines-vim) - 12th February 2026
+- [Git, but better](https://www.oliverdavies.uk/blog/git-better) - 16th August 2026
+- [More monorepos](https://www.oliverdavies.uk/blog/more-monorepos) - 15th August 2026
+- [I like monorepos](https://www.oliverdavies.uk/blog/i-monorepos) - 14th August 2026
+- [Removing vim-dadbod from Neovim](https://www.oliverdavies.uk/blog/removing-vim-dadbod) - 4th August 2026
+- [An .ignored directory in every repository](https://www.oliverdavies.uk/blog/ignored-directory-in-every-repo) - 3rd August 2026
+- [Using Sculpin and live-server together](https://www.oliverdavies.uk/blog/using-sculpin-live-server-together) - 1st August 2026
+- [Configuring blue/green deployments for this website](https://www.oliverdavies.uk/blog/configuring-blue-green-deployments) - 31st July 2026
+- [Announcing the Sculpin Table of Contents Bundle](https://www.oliverdavies.uk/blog/announcing-sculpin-table-contents-bundle) - 28th July 2026
+- [Sculpin returns](https://www.oliverdavies.uk/blog/sculpin-returns) - 27th July 2026
+- [Creating reusable Sculpin bundles](https://www.oliverdavies.uk/blog/creating-reusable-sculpin-bundles) - 27th July 2026
 
 <!-- End latest blog posts -->
 
 ## Latest Testimonials
 
 <!-- Start latest testimonials -->
+
+### Jonathan Trepczyk - Head of Business Development at NewRedo
+
+Oliver is exactly the kind of advisor you want in your corner.
+
+He's highly responsive, deeply knowledgeable, and communicates complex technical topics with real clarity.
+
+Our ongoing advisory collaboration has been consistently valuable; he stays engaged, follows through, and always adds genuine insight.
+
+I'd recommend him without hesitation.
+
+### Bharadwaj Pulugundla
+
+Great experience working together.
+
+Quick turnaround, proactive follow-ups, and very knowledgeable.
+
+Would definitely recommend!
 
 ### Mahesh Kumar - Founder of IT Consultancy
 
@@ -45,7 +62,9 @@ We would highly recommend him.
 
 ### Chris Knox - Creative Director
 
-I have worked with Oliver several times over the last few years - He is a great addition to any team, he collaborates and communicates well, and absolutely knows his stuff!
+I have worked with Oliver several times over the last few years.
+
+He is a great addition to any team, he collaborates and communicates well, and absolutely knows his stuff!
 
 ### Technical Director - European knowledge platform
 
@@ -53,7 +72,7 @@ Oliver devised a creative and original approach to Drupal theme switching based 
 
 He gave several helpful mentoring sessions with our front end developer to support us to build this approach into our site.
 
-### Luis Ibhiabor - IT Teacher, Activate Learning (Reading College)
+### Luis Ibhiabor - IT Teacher at Activate Learning (Reading College)
 
 We are indeed grateful to Oliver for his sessions with our students.
 
@@ -67,51 +86,47 @@ He is dedicated and passionate about frontend and backend development.
 
 We will be glad to have him back next time.
 
-### Daniel Davis-Boxleitner - Senior Engineer at Palantir.net
+### Joe Howell - Director at Bastion Insurance
 
-This course is really great and I've recommended it to my coworkers here at Palantir.net.
+I've worked with Oliver for a number of years on B2C and B2B web projects and he has always demonstrated himself to be an expert in his field.
 
-### Frank Landry
+As an insurance provider, some of our products and services don't naturally fit within a traditional eCommerce journey - but Oliver has always been able to come up with innovative ways to leverage core Drupal functionality and develop custom modules to meet our needs.
 
-The course was very informative. One of the biggest pain points with Drupal testing was that there was no clear and definitive guide on setting up the php unit XML file to get functional and kernel tests working right away. Your guide was fantastic and I will definitely be using it going forward in my module development for work.
+Friendly, flexible and diligent - I wouldn't hesitate to recommend Oliver to anyone looking for a Drupal Developer to progress their next project.
 
 ### Adam Nuttall - Drupal Engineer
 
-Well done. You've created a really excellent resource here that has the potential to bring Drupal development forward a huge leap. You've managed to simplify and share some often complex seeming issues.
+Well done.
 
-### Kevin Coyle - Design System Engineering Consultant
+You've created a really excellent resource here that has the potential to bring Drupal development forward a huge leap.
 
-I'm liking your short emails. They're just the right length that isn't too distracting but I'm able to consume it in a single glance.
+You've managed to simplify and share some often complex seeming issues.
 
-### Boris Böhne - Drupal Developer
+### Tom Evans
 
-I really love your daily posts. They are opinionated, and this gives room for thoughts, I appreciate this.
+I had the opportunity and good fortune to work with Oliver solving two problems that I was having on a Drupal Commerce site.
+
+I have done several Drupal sites using UberCart, but since it is deprecated, I chose to use Commerce.
+
+I had searched, posted to forums, and other normal means to find answers to my problems, to no response and to no avail.
+
+I got a referral to Oliver and scheduled an appointment to discuss the problems on a Zoom call.
+
+After showing him via screen share where I was stumped, he offered different approaches to what I was doing, which I was fine with as long as it worked.
+
+Once we solved the first problem, I was really elated and then focused on the second one, which was an easier fix.
+
+So in a short period of time, both problems were fixed and tested.
+
+I found Oliver was affable and easy to work with.
+
+He has a strong work ethic and a desire to solve problems for his customers and can recommend working with him.
+
+I think one of his strengths is to find alternative solutions to problems.
+
+### Stephen Mulvihill - Solutions Architect
+
+I like the "$ git log -S" and "$ git log --grep" commands, will definitely be using these, thanks!
 
 <!-- End latest testimonials -->
 
-## Latest Open Source Contributions
-
-<!-- Start latest contributions -->
-
-- [Pushed to main at opdavies/nix-config](https://git.oliverdavies.uk/opdavies/nix-config/commit/2f3d5c12aa2fcfdc3bd8f7645572c0b61f120125) - 19th April 2026
-- [Pushed to main at opdavies/oliverdavies.uk](https://git.oliverdavies.uk/opdavies/oliverdavies.uk/commit/74caf3695cd38b0cbea45a549900045fc17430c1) - 19th April 2026
-- [Pushed to deploy at opdavies/oliverdavies.uk](https://git.oliverdavies.uk/opdavies/oliverdavies.uk/commit/74caf3695cd38b0cbea45a549900045fc17430c1) - 19th April 2026
-- [Pushed to main at opdavies/oliverdavies.uk](https://git.oliverdavies.uk/opdavies/oliverdavies.uk/commit/d1079d23dc0dbc94664aa9a19a487503088d6a4d) - 19th April 2026
-- [Pushed to deploy at opdavies/oliverdavies.uk](https://git.oliverdavies.uk/opdavies/oliverdavies.uk/commit/d1079d23dc0dbc94664aa9a19a487503088d6a4d) - 19th April 2026
-- [Pushed to main at opdavies/nix-config](/opdavies/nix-config/compare/7d4ae3a3658ff38dc43aea604f5a4e56b30275e2...e045eea894f14d94800582be00eb29309846a745) - 19th April 2026
-- [Pushed to main at opdavies/nix-config](/opdavies/nix-config/compare/32e1c1653250fd4748ea9471bc440becdfed0f80...7d4ae3a3658ff38dc43aea604f5a4e56b30275e2) - 19th April 2026
-- [Pushed to main at opdavies/oliverdavies.uk](https://git.oliverdavies.uk/opdavies/oliverdavies.uk/commit/b80ae925c8abdaad8dc2ea7ee21b6ceb1c3798f7) - 18th April 2026
-- [Pushed to main at opdavies/nix-config](https://git.oliverdavies.uk/opdavies/nix-config/commit/32e1c1653250fd4748ea9471bc440becdfed0f80) - 18th April 2026
-- [Pushed to main at opdavies/nix-config](/opdavies/nix-config/compare/d70f89c487c3867e5a2cbc89562db136432910d7...017a8ba826986ae688e79471e1ceb603c98e12c6) - 18th April 2026
-- [Pushed to main at opdavies/nix-config](https://git.oliverdavies.uk/opdavies/nix-config/commit/d70f89c487c3867e5a2cbc89562db136432910d7) - 18th April 2026
-- [Pushed to deploy at opdavies/oliverdavies.uk](https://git.oliverdavies.uk/opdavies/oliverdavies.uk/commit/b80ae925c8abdaad8dc2ea7ee21b6ceb1c3798f7) - 18th April 2026
-- [Pushed to main at opdavies/oliverdavies.uk](https://git.oliverdavies.uk/opdavies/oliverdavies.uk/commit/a4fe64288b6cea86885d3cb4c00554cab729376d) - 18th April 2026
-- [Pushed to deploy at opdavies/oliverdavies.uk](https://git.oliverdavies.uk/opdavies/oliverdavies.uk/commit/a4fe64288b6cea86885d3cb4c00554cab729376d) - 18th April 2026
-- [Pushed to main at opdavies/notes-tech](https://git.oliverdavies.uk/opdavies/notes-tech/commit/1519c71a81901dfeb796b24224a36fd95a189291) - 18th April 2026
-- [Pushed to main at opdavies/oliverdavies.uk](/opdavies/oliverdavies.uk/compare/7afcdb1e71ccca791fcc2c5572c4692dfa517c41...3ee89774ce47f3d0eaa6fa7f90d7d4801acf2311) - 18th April 2026
-- [Pushed to main at opdavies/nix-config](https://git.oliverdavies.uk/opdavies/nix-config/commit/2d696a3e6c452b06693c8c2b6561cbffa6cc9cea) - 18th April 2026
-- [Pushed to main at opdavies/notes-tech](https://git.oliverdavies.uk/opdavies/notes-tech/commit/735de2eba4b0d3282bba1f64dc4eaa4e31ad8549) - 18th April 2026
-- [Pushed to main at opdavies/nix-config](https://git.oliverdavies.uk/opdavies/nix-config/commit/19df6971317dfd3e2848b2737e62c996eb83d985) - 18th April 2026
-- [Pushed to main at opdavies/nix-config](https://git.oliverdavies.uk/opdavies/nix-config/commit/872962a5cbe76df4c2c545a8ee9d5e9189f4e628) - 18th April 2026
-
-<!-- End latest contributions -->
