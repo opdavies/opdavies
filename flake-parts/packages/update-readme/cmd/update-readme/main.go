@@ -81,7 +81,7 @@ func run() error {
 
 	for _, section := range []struct{ name, body string }{
 		{"latest blog posts", posts},
-		{"latest testimonials", testimonials},
+		{"featured testimonials", testimonials},
 	} {
 		content, err = replaceSection(content, section.name, section.body)
 		if err != nil {

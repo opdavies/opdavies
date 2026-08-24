@@ -11,7 +11,7 @@ I write and contribute to open-source code, including Drupal core. You can see m
 ## Table of Contents
 
 - [Latest Blog Posts](#latest-blog-posts)
-- [Latest Testimonials](#latest-testimonials)
+- [Featured Testimonials](#featured-testimonials)
 
 ## Latest Blog Posts
 
@@ -30,9 +30,9 @@ I write and contribute to open-source code, including Drupal core. You can see m
 
 <!-- End latest blog posts -->
 
-## Latest Testimonials
+## Featured Testimonials
 
-<!-- Start latest testimonials -->
+<!-- Start featured testimonials -->
 
 ### Technical Director - European knowledge platform
 
@@ -80,5 +80,5 @@ He's been really helpful and very responsive.
 
 Much appreciated!
 
-<!-- End latest testimonials -->
+<!-- End featured testimonials -->
 
