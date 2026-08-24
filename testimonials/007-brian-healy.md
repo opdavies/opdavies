@@ -1,5 +1,5 @@
 ---
-name: Brian Healey
+name: Brian Healy
 description: Director, Tincan
 ---
 
