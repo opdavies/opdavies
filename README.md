@@ -17,6 +17,7 @@ I write and contribute to open-source code, including Drupal core. You can see m
 
 <!-- Start latest blog posts -->
 
+- [Deleting multiple Git branches with xargs](https://www.oliverdavies.uk/blog/deleting-multiple-git-branches-xargs) - 4th September 2026
 - [Sculpin is now in nixpkgs](https://blog.sculpin.io/2026/08/28/sculpin-in-nixpkgs) - 28th August 2026
 - [Git, but better](https://www.oliverdavies.uk/blog/git-better) - 16th August 2026
 - [More monorepos](https://www.oliverdavies.uk/blog/more-monorepos) - 15th August 2026
@@ -26,7 +27,6 @@ I write and contribute to open-source code, including Drupal core. You can see m
 - [Using Sculpin and live-server together](https://www.oliverdavies.uk/blog/using-sculpin-live-server-together) - 1st August 2026
 - [Configuring blue/green deployments for this website](https://www.oliverdavies.uk/blog/configuring-blue-green-deployments) - 31st July 2026
 - [Announcing the Sculpin Table of Contents Bundle](https://www.oliverdavies.uk/blog/announcing-sculpin-table-contents-bundle) - 28th July 2026
-- [Sculpin returns](https://www.oliverdavies.uk/blog/sculpin-returns) - 27th July 2026
 
 <!-- End latest blog posts -->
 
