@@ -17,16 +17,16 @@ I write and contribute to open-source code, including Drupal core. You can see m
 
 <!-- Start latest blog posts -->
 
-- [Site updated to Sculpin 4](https://www.oliverdavies.uk/blog/site-updated-sculpin-4) - 26th September 2026
-- [Learning jj (Jujutsu)](https://www.oliverdavies.uk/blog/learning-jj) - 26th September 2026
-- [Deleting multiple Git branches with xargs](https://www.oliverdavies.uk/blog/deleting-multiple-git-branches-xargs) - 4th September 2026
+- [Questions I regularly ask myself](https://www.oliverdavies.uk/blog/postsquestions-i-regularly-ask-myselfmd) - 27th September 2026
+- [My commitments to myself](https://www.oliverdavies.uk/blog/postsmy-commitments-myselfmd) - 27th September 2026
+- [Build Your Day Backwards](https://www.oliverdavies.uk/blog/postsbuild-your-day-backwardsmd) - 27th September 2026
+- [Site updated to Sculpin 4](https://www.oliverdavies.uk/blog/postssite-updated-sculpin-4md) - 26th September 2026
+- [Learning jj (Jujutsu)](https://www.oliverdavies.uk/blog/postslearning-jjmd) - 26th September 2026
+- [Deleting multiple Git branches with xargs](https://www.oliverdavies.uk/blog/postsdeleting-multiple-git-branches-xargsmd) - 4th September 2026
 - [Sculpin is now in nixpkgs](https://blog.sculpin.io/2026/08/28/sculpin-in-nixpkgs) - 28th August 2026
-- [Git, but better](https://www.oliverdavies.uk/blog/git-better) - 16th August 2026
-- [More monorepos](https://www.oliverdavies.uk/blog/more-monorepos) - 15th August 2026
-- [I like monorepos](https://www.oliverdavies.uk/blog/i-monorepos) - 14th August 2026
-- [Removing vim-dadbod from Neovim](https://www.oliverdavies.uk/blog/removing-vim-dadbod) - 4th August 2026
-- [An .ignored directory in every repository](https://www.oliverdavies.uk/blog/ignored-directory-in-every-repo) - 3rd August 2026
-- [Using Sculpin and live-server together](https://www.oliverdavies.uk/blog/using-sculpin-live-server-together) - 1st August 2026
+- [Git, but better](https://www.oliverdavies.uk/blog/postsgit-bettermd) - 16th August 2026
+- [More monorepos](https://www.oliverdavies.uk/blog/postsmore-monoreposmd) - 15th August 2026
+- [I like monorepos](https://www.oliverdavies.uk/blog/postsi-monoreposmd) - 14th August 2026
 
 <!-- End latest blog posts -->
 
