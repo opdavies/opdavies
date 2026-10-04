@@ -17,16 +17,16 @@ I write and contribute to open-source code, including Drupal core. You can see m
 
 <!-- Start latest blog posts -->
 
-- [Questions I regularly ask myself](https://www.oliverdavies.uk/blog/postsquestions-i-regularly-ask-myselfmd) - 27th September 2026
-- [My commitments to myself](https://www.oliverdavies.uk/blog/postsmy-commitments-myselfmd) - 27th September 2026
-- [Build Your Day Backwards](https://www.oliverdavies.uk/blog/postsbuild-your-day-backwardsmd) - 27th September 2026
-- [Site updated to Sculpin 4](https://www.oliverdavies.uk/blog/postssite-updated-sculpin-4md) - 26th September 2026
-- [Learning jj (Jujutsu)](https://www.oliverdavies.uk/blog/postslearning-jjmd) - 26th September 2026
-- [Deleting multiple Git branches with xargs](https://www.oliverdavies.uk/blog/postsdeleting-multiple-git-branches-xargsmd) - 4th September 2026
+- [Git hooks, pre-commit and jj](https://www.oliverdavies.uk/blog/git-hooks-pre-commit-jj) - 3rd October 2026
+- [Questions I regularly ask myself](https://www.oliverdavies.uk/blog/questions-i-regularly-ask-myself) - 27th September 2026
+- [My commitments to myself](https://www.oliverdavies.uk/blog/my-commitments-myself) - 27th September 2026
+- [Build Your Day Backwards](https://www.oliverdavies.uk/blog/build-your-day-backwards) - 27th September 2026
+- [Site updated to Sculpin 4](https://www.oliverdavies.uk/blog/site-updated-sculpin-4) - 26th September 2026
+- [Learning jj (Jujutsu)](https://www.oliverdavies.uk/blog/learning-jj) - 26th September 2026
+- [Deleting multiple Git branches with xargs](https://www.oliverdavies.uk/blog/deleting-multiple-git-branches-xargs) - 4th September 2026
 - [Sculpin is now in nixpkgs](https://blog.sculpin.io/2026/08/28/sculpin-in-nixpkgs) - 28th August 2026
-- [Git, but better](https://www.oliverdavies.uk/blog/postsgit-bettermd) - 16th August 2026
-- [More monorepos](https://www.oliverdavies.uk/blog/postsmore-monoreposmd) - 15th August 2026
-- [I like monorepos](https://www.oliverdavies.uk/blog/postsi-monoreposmd) - 14th August 2026
+- [Git, but better](https://www.oliverdavies.uk/blog/git-better) - 16th August 2026
+- [More monorepos](https://www.oliverdavies.uk/blog/more-monorepos) - 15th August 2026
 
 <!-- End latest blog posts -->
 
