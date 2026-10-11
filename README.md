@@ -17,6 +17,7 @@ I write and contribute to open-source code, including Drupal core. You can see m
 
 <!-- Start latest blog posts -->
 
+- [Fixing stale files and cached test failures in DDEV](https://www.oliverdavies.uk/blog/fixing-stale-files-cached-test-failures-ddev) - 10th October 2026
 - [Speaking about Jujutsu at PHPSW](https://www.oliverdavies.uk/blog/speaking-about-jujutsu-phpsw) - 5th October 2026
 - [Releasing vim-dadbod-drupal](https://www.oliverdavies.uk/blog/releasing-vim-dadbod-drupal) - 4th October 2026
 - [Git hooks, pre-commit and jj](https://www.oliverdavies.uk/blog/git-hooks-pre-commit-jj) - 3rd October 2026
@@ -26,7 +27,6 @@ I write and contribute to open-source code, including Drupal core. You can see m
 - [Site updated to Sculpin 4](https://www.oliverdavies.uk/blog/site-updated-sculpin-4) - 26th September 2026
 - [Learning jj (Jujutsu)](https://www.oliverdavies.uk/blog/learning-jj) - 26th September 2026
 - [Deleting multiple Git branches with xargs](https://www.oliverdavies.uk/blog/deleting-multiple-git-branches-xargs) - 4th September 2026
-- [Sculpin is now in nixpkgs](https://blog.sculpin.io/2026/08/28/sculpin-in-nixpkgs) - 28th August 2026
 
 <!-- End latest blog posts -->
 
