@@ -17,6 +17,7 @@ I write and contribute to open-source code, including Drupal core. You can see m
 
 <!-- Start latest blog posts -->
 
+- [Neovim user experiments with emacs](https://www.oliverdavies.uk/blog/experimenting-with-emacs) - 16th October 2026
 - [jj and contributing to open source at PHPSW](https://www.oliverdavies.uk/blog/jj-contributing-open-source-phpsw) - 14th October 2026
 - [Fixing stale files and cached test failures in DDEV](https://www.oliverdavies.uk/blog/fixing-stale-files-cached-test-failures-ddev) - 10th October 2026
 - [Speaking about Jujutsu at PHPSW](https://www.oliverdavies.uk/blog/speaking-about-jujutsu-phpsw) - 5th October 2026
@@ -26,7 +27,6 @@ I write and contribute to open-source code, including Drupal core. You can see m
 - [My commitments to myself](https://www.oliverdavies.uk/blog/my-commitments-myself) - 27th September 2026
 - [Build Your Day Backwards](https://www.oliverdavies.uk/blog/build-your-day-backwards) - 27th September 2026
 - [Site updated to Sculpin 4](https://www.oliverdavies.uk/blog/site-updated-sculpin-4) - 26th September 2026
-- [Learning jj (Jujutsu)](https://www.oliverdavies.uk/blog/learning-jj) - 26th September 2026
 
 <!-- End latest blog posts -->
 
