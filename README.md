@@ -17,6 +17,7 @@ I write and contribute to open-source code, including Drupal core. You can see m
 
 <!-- Start latest blog posts -->
 
+- [PHPSW lightning talks, last meetup of 2026](https://www.oliverdavies.uk/blog/phpsw-lightning-talks-last-meetup-2026) - 28th October 2026
 - [I&#039;ve migrated my personal Git repositories to cgit](https://www.oliverdavies.uk/blog/ive-migrated-my-personal-git-repositories-cgit) - 23rd October 2026
 - [Secure all the things (recent Drupal and PHP security issues)](https://www.oliverdavies.uk/blog/secure-all-things-recent-drupal-php-security-issues) - 22nd October 2026
 - [Viewing my blog posts as Markdown](https://www.oliverdavies.uk/blog/viewing-blog-posts-markdown) - 18th October 2026
@@ -26,7 +27,6 @@ I write and contribute to open-source code, including Drupal core. You can see m
 - [Speaking about Jujutsu at PHPSW](https://www.oliverdavies.uk/blog/speaking-about-jujutsu-phpsw) - 5th October 2026
 - [Releasing vim-dadbod-drupal](https://www.oliverdavies.uk/blog/releasing-vim-dadbod-drupal) - 4th October 2026
 - [Git hooks, pre-commit and jj](https://www.oliverdavies.uk/blog/git-hooks-pre-commit-jj) - 3rd October 2026
-- [Questions I regularly ask myself](https://www.oliverdavies.uk/blog/questions-i-regularly-ask-myself) - 27th September 2026
 
 <!-- End latest blog posts -->
 
