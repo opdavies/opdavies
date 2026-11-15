@@ -17,6 +17,9 @@ I write and contribute to open-source code, including Drupal core. You can see m
 
 <!-- Start latest blog posts -->
 
+- [TODO Add sculpin.withBundles() to nixpkgs](https://www.oliverdavies.uk/blog/todo-add-sculpin-with-bundles-nixpkgs) - 14th November 2026
+- [Sculpin PR 553 repro notes](https://www.oliverdavies.uk/blog/sculpin-pr-553-repro-notes) - 14th November 2026
+- [Creating an ad-hoc sculpin4 dev shell with Nix](https://www.oliverdavies.uk/blog/creating-ad-hoc-sculpin4-dev-shell-nix) - 14th November 2026
 - [Streaming on Sculpin later today](https://www.oliverdavies.uk/blog/streaming-sculpin-later-today) - 14th November 2026
 - [Speaking about Sculpin at PHP Maven](https://www.oliverdavies.uk/blog/speaking-about-sculpin-php-maven) - 7th November 2026
 - [Adding related posts to oliverdavies.uk](https://www.oliverdavies.uk/blog/adding-related-posts) - 31st October 2026
@@ -24,9 +27,6 @@ I write and contribute to open-source code, including Drupal core. You can see m
 - [PHPSW lightning talks, last meetup of 2026](https://www.oliverdavies.uk/blog/phpsw-lightning-talks-last-meetup-2026) - 28th October 2026
 - [I&#039;ve migrated my personal Git repositories to cgit](https://www.oliverdavies.uk/blog/ive-migrated-my-personal-git-repositories-cgit) - 23rd October 2026
 - [Secure all the things (recent Drupal and PHP security issues)](https://www.oliverdavies.uk/blog/secure-all-things-recent-drupal-php-security-issues) - 22nd October 2026
-- [Viewing my blog posts as Markdown](https://www.oliverdavies.uk/blog/viewing-blog-posts-markdown) - 18th October 2026
-- [Neovim user experiments with emacs](https://www.oliverdavies.uk/blog/experimenting-with-emacs) - 16th October 2026
-- [jj and contributing to open source at PHPSW](https://www.oliverdavies.uk/blog/jj-contributing-open-source-phpsw) - 14th October 2026
 
 <!-- End latest blog posts -->
 
