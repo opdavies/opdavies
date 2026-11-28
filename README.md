@@ -17,6 +17,8 @@ I write and contribute to open-source code, including Drupal core, Sculpin and N
 
 <!-- Start latest blog posts -->
 
+- [Creating a personal stats page](https://www.oliverdavies.uk/blog/creating-personal-stats-page) - 27th November 2026
+- [Speaking about jj tomorrow at TechMids Conf](https://www.oliverdavies.uk/blog/speaking-about-jj-tomorrow-techmids-conf) - 26th November 2026
 - [Sculpin 4 discussion and pair programming with Kevin Boyd (@beryllium)](https://www.oliverdavies.uk/blog/sculpin-4-discussion-pair-programming-kevin-boyd-beryllium) - 22nd November 2026
 - [Discussing Sculpin on the PHP Alive and Kicking podcast](https://www.oliverdavies.uk/blog/discussing-sculpin-php-alive-kicking-podcast) - 21st November 2026
 - [TODO Add sculpin.withBundles() to nixpkgs](https://www.oliverdavies.uk/blog/todo-add-sculpin-with-bundles-nixpkgs) - 14th November 2026
@@ -25,8 +27,6 @@ I write and contribute to open-source code, including Drupal core, Sculpin and N
 - [Streaming on Sculpin later today](https://www.oliverdavies.uk/blog/streaming-sculpin-later-today) - 14th November 2026
 - [Speaking about Sculpin at PHP Maven](https://www.oliverdavies.uk/blog/speaking-about-sculpin-php-maven) - 7th November 2026
 - [Adding related posts to oliverdavies.uk](https://www.oliverdavies.uk/blog/adding-related-posts) - 31st October 2026
-- [Listing my open source contributions with Sculpin and Nix](https://www.oliverdavies.uk/blog/listing-my-open-source-contributions-sculpin-nix) - 30th October 2026
-- [PHPSW lightning talks, last meetup of 2026](https://www.oliverdavies.uk/blog/phpsw-lightning-talks-last-meetup-2026) - 28th October 2026
 
 <!-- End latest blog posts -->
 
